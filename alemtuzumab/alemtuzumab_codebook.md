@@ -1,10 +1,9 @@
 #  Alemtuzumab Code Book
-### 
-1. Root is alemtuzumab, a humanized anti-CD52 monoclonal antibody,  also known as Campath, CamPath-1 H, and Lemtrada. 
-2. FDA approval for Campath was granted in May 2001. 
-3. In searching for publications, clinical trials etc. a 60 day allowance was made for 'publication lag'.
-4. The data in this case study are modeled as a network of nodes connected by edges
-5. Allowed node types are
+
+## A cure informatics network (Williams et al. 2015), with modifications introduced by this collaborative effort, is being constructed for the anti-cancer biological, Alemtuzumab. 
+
+1. The data in this case study are modeled as a network of nodes connected by edges
+2. Allowed node types are
   * root
   * ct
   * fda
@@ -14,7 +13,11 @@
   * institution
   * author
 
-6. Data are stored in four column format where source and target contain unique identifiers for nodes and stype and ntype refer to node types for source and target respectively. An example is provided below and does not necessarily represent real data for the alemtuzumab network.
+3. The term root is reserved for alemtuzumab, a humanized anti-CD52 monoclonal antibody,  also known as Campath, CamPath-1 H, and Lemtrada. FDA approval for Campath was granted in May 2001.  
+In searching for publications, clinical trials etc. a 60 day allowance was made for 'publication lag'.
+
+4. Data are stored in a four column format where source and target contain unique identifiers for nodes and stype and ntype refer to node types for source and target respectively. An example 
+is provided below and does not necessarily represent real data for the alemtuzumab network.
 
 | source | stype | target | ttype |
 |  :---   | :--- | :--- | :--- |
