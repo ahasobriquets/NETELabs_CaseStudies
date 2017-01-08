@@ -13,7 +13,8 @@
   * grant
   * institution
   * author
-6. Data are stored in four column format, e.g. below.
+
+6. Data are stored in four column format where source and target contain unique identifiers for nodes and stype and ntype refer to node types for source and target respectively. An example is provided below and does not necessarily represent real data for the alemtuzumab network.
 
 | source | stype | target | ttype |
 |  :---   | :--- | :--- | :--- |
