@@ -1,5 +1,24 @@
 #  Alemtuzumab Code Book
-### Root is alemtuzumab, a humanized anti-CD52 monoclonal antibody,  also known as Campath, CamPath-1 H, and Lemtrada. FDA approval for Campath was granted in May 2001. In searching for publications, clinical trials etc. a 60 day allowance was made for 'publication lag'.
+### 
+1. Root is alemtuzumab, a humanized anti-CD52 monoclonal antibody,  also known as Campath, CamPath-1 H, and Lemtrada. 
+2. FDA approval for Campath was granted in May 2001. 
+3. In searching for publications, clinical trials etc. a 60 day allowance was made for 'publication lag'.
+4. The data in this case study are modeled as a network of nodes connected by edges
+5. Allowed node types are
+  * root
+  * ct
+  * fda
+  * pmid1
+  * pmid2
+  * grant
+  * institution
+  * author
+6. Data are stored in four column format, e.g. below.
+
+| source  | stype   | target   | ttype |
+ --------  --------  ---------  ------
+| Campath | root    | NCT11265 | ct    |
+| Campath | root    | 8652811  | pmid1 |
 
 ## Workflow Description
 
