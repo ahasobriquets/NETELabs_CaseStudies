@@ -26,24 +26,30 @@ is provided below and does not necessarily represent real data for the alemtuzum
 
 ## Workflow Description
 
-1. Root (alemtuzumab) to FDA: This is a single edge between two nodes. Root and FDA.
+1. root (alemtuzumab) to fda: This is a single edge between two nodes. Root and FDA.
 
-2. Root to Clinical Trials: This is also a single edge between two nodes. Root and CT. A 
+2. root to clinical trials: This is also a single edge between two nodes. root and ct. A 
 manual search of clinicaltrials.gov revealed 5 clinical trials that began before 7/31/2001 
 although all of them completed well after that date. Thus, none of them have been included in the restrospective trace but they are used to indicate post-alemtuzumab activity. 
 
-
-3. Root to PMID1: Multiple nodes exist in PMID1. The basis for nodes is a PubMed
+3. root to pmid1: Multiple nodes exist in PMID1. The basis for nodes is a PubMed
 Search for Alemtuzumab or Campath restricted from 01/01/1900 to 07/31/2001 (approval date plus
-60 days for publication lag). Each node corresponds to on publication (PMID). Only one edge 
-is drawn from root to a given PMID1 node. **How is redundancy between CT and PMID1 to be handled?**
+60 days for publication lag). Each pmid1 node corresponds to one publication. Only one edge 
+is drawn from root to a given PMID1 node. **How is redundancy between ct and pmid1 to be handled?**
 
-4. FDA to PMID1:  FDA approval for Campath was granted in May 2001. The FDA Oncology 
+4. fda to pmid1:  FDA approval for Campath was granted in May 2001. The FDA Oncology 
 Center of  Excellence published an Approval Summary paper in 2008- PMID 18305062. A single 
 PMID was  extracted from the approval documents on the Drugs@FDA website. Cheson et al. 
 (1996) PMID: 8652811. 
 
-5. Clinical Trials to PMID 1. A  search in PubMed using criteria of alemtuzumab, publication type of clinical trial, and date restricted to 7/31/2001 or earlier (((alemtuzumab) AND "clinical trial"[Publication Type])) AND ("1900/01/01"[Date - Publication] : "2001/07/31"[Date - Publication]) 
+5. ct to pmid1. A  search in PubMed using criteria of alemtuzumab, publication type of clinical trial, and date restricted to 7/31/2001 or earlier (((alemtuzumab) AND "clinical trial"[Publication Type])) AND ("1900/01/01"[Date - Publication] : "2001/07/31"[Date - Publication]) 
+
+6. pmid1 to pmid2. pmid2 refers to cited references and is derived from Elsevier data where Eric maps pmids to ScopusIDs to Cited Scopus IDs and then back to pmids
+
+7. pmid1 to grants and pmid2 to grants. using NIH ExPORTER data [needs to be expanded on]
+
+8. authors and institions- derived from Scopus data
+ 
 
 
 
