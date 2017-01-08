@@ -15,10 +15,10 @@
   * author
 6. Data are stored in four column format, e.g. below.
 
-| source  | stype   | target   | ttype |
- --------  --------  ---------  ------
-| Campath | root    | NCT11265 | ct    |
-| Campath | root    | 8652811  | pmid1 |
+| source | stype | target | ttype |
+|  :---   | :--- | :--- | :--- |
+| Campath | root | NCT11265 | ct |
+| Campath | root | 8652811  | pmid1 |
 
 ## Workflow Description
 
