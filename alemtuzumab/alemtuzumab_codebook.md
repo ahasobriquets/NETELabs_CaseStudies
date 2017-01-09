@@ -49,13 +49,13 @@ Center of  Excellence published an Approval Summary paper in 2008- PMID 18305062
 PMID was  extracted from the approval documents on the Drugs@FDA website. Cheson et al. 
 (1996) PMID: 8652811. 
 
-5. ct to pmid1. A  search in PubMed using criteria of alemtuzumab, publication type of clinical trial, and date restricted to 7/31/2001 or earlier (((alemtuzumab) AND "clinical trial"[Publication Type])) AND ("1900/01/01"[Date - Publication] : "2001/07/31"[Date - Publication]) 
+5. ct to pmid1: A  search in PubMed using criteria of alemtuzumab, publication type of clinical trial, and date restricted to 7/31/2001 or earlier (((alemtuzumab) AND "clinical trial"[Publication Type])) AND ("1900/01/01"[Date - Publication] : "2001/07/31"[Date - Publication]) 
 
-6. pmid1 to pmid2. pmid2 refers to cited references and is derived from Elsevier data where Eric maps pmids to ScopusIDs to Cited Scopus IDs and then back to pmids
+6. pmid1 to pmid2: pmid2 refers to cited references and is derived from Elsevier data where Eric maps pmids to ScopusIDs to Cited Scopus IDs and then back to pmids
 
-7. pmid1 to grants and pmid2 to grants. using NIH ExPORTER data [needs to be expanded on]
+7. pmid1 to grants and pmid2 to grants: using NIH ExPORTER data [needs to be expanded on]
 
-8. authors and institions- derived from Scopus data
+8. authors and institions: derived from Scopus data
  
 
 
