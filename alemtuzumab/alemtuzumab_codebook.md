@@ -38,13 +38,11 @@ is provided below and does not necessarily represent real data for the alemtuzum
 although all of them completed well after that date. Thus, none of them have been included in the restrospective trace but they are used to indicate post-alemtuzumab activity. 
 
 3. root to pmid1: Multiple nodes exist in PMID1. The basis for nodes is a PubMed Search for Alemtuzumab or Campath restricted from 01/01/1900 to 07/31/2001 (approval date plus
-60 days for publication lag). Each pmid1 node corresponds to one publication. Only one edge is drawn from root to a given PMID1 node. *Redundancy between ct and pmid1 is  handled 
-by allowing ct to take precedence. A root to pmid1 edge is drawn only if a root to ct/fda/patent to pmid1 edge does not exist.*
+60 days for publication lag). Each pmid1 node corresponds to one publication. Only one edge is drawn from root to a given PMID1 node. *Redundancy in pmid1 is handled the following way. If the same pmid1 has edges from root and ct or patent or fda 
+then the root to pmid1 edge takes lesser precedence. A root to pmid1 edge is drawn only if a root to ct/fda/patent to pmid1 edge does not exist.*
 
-. fda to pmid1:  FDA approval for Campath was granted in May 2001. The FDA Oncology 
-Center of  Excellence published an Approval Summary paper in 2008- PMID 18305062. A single 
-PMID was  extracted from the approval documents on the Drugs@FDA website. Cheson et al. 
-(1996) PMID: 8652811. 
+. fda to pmid1:  FDA approval for Campath was granted in May 2001. The FDA Oncology Center of  Excellence published an Approval Summary paper in 2008- PMID 18305062. A single 
+PMID was  extracted from the approval documents on the Drugs@FDA website. Cheson et al. (1996) PMID: 8652811. 
 
 5. ct to pmid1: A  search in PubMed using criteria of alemtuzumab, publication type of clinical trial, and date restricted to 7/31/2001 or earlier (((alemtuzumab) AND "clinical trial"[Publication Type])) AND ("1900/01/01"[Date - Publication] : "2001/07/31"[Date - Publication]) 
 
