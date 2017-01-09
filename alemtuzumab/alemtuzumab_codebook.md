@@ -25,11 +25,11 @@ is provided below and does not necessarily represent real data for the alemtuzum
 
 5. Ancillary files
   * alemtuzumab_fda: copy of BLA approval includes a single PMID 8652811 from the Medical Review
-  * alemtuzumab_npl: non-patent literature citations scraped from the original patent for Campath via Google Patents US5846534
+  * alemtuzumab_npl: non-patent literature citations scraped from the Espacenet data for alemtuzumab. 
   * alemtuzumab.csv: patents data from EspaceNet
   * alemtuzumab_pubmed: pre 7/31/2001 search for Campath or Alemtuzumab in Pubmed
   * alemtuzumab_pubmed_nct: pre 7/31/2001 search for Campath or Alemtuzumab in Pubmed with publication type set to clinical trial
-
+  * campath_patent: npl scraped from a Google Patennts search for Campath- the original patent granted to Waldmann. US5846534A in 1998.
 
 ## Workflow Description
 
