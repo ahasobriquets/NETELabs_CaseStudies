@@ -39,17 +39,19 @@ Required files (substitute specific drug or biological names for drug as appropr
 4.  Extract cited references from fda approval summary publications if they exist, else rely on scraping documents from 1.
 5.  Pubmed search for time restricted (NDA/BLA + 2 months) for drug name as keyword (ingredient or trade name)
 6.  Construct edge list
-| source | stype | target | ttype |
-|  :---   | :--- | :--- | :--- |
-| drug/biol | root | fda_identifier | fda |
-| drug/bio | root | ct_identifier | ct
-| drug/bio | root | patent_no | pt |
-| fda_identifier | fda| pmid | pmid1 |
-| ct_identifier | ct | pmid | pmid1 |
-| patent_no | pt | pmid | pmid1 |
-|pmid | pmid1 | pmid | pmid2 |
-| pmid | pmid1 | grant_identifier | grant |
-| pmid | pmid2 | grant_identifier | grant |
+
+  | source | stype | target | ttype |
+  |  :---   | :--- | :--- | :--- |
+  | drug/biol | root | fda_identifier | fda |
+  | drug/bio | root | ct_identifier | ct
+  | drug/bio | root | patent_no | pt |
+  | fda_identifier | fda| pmid | pmid1 |
+  | ct_identifier | ct | pmid | pmid1 |
+  | patent_no | pt | pmid | pmid1 |
+  |pmid | pmid1 | pmid | pmid2 |
+  | pmid | pmid1 | grant_identifier | grant |
+  | pmid | pmid2 | grant_identifier | grant |
+  
 
 
 
