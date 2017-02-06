@@ -4,7 +4,8 @@ This scripts generates scores of authors and publications based on the drug deve
 **Scripts:**    
 
 *1-generic_CNI.sh*    
-It is the main script to call other sub scripts. Drug name MUST be passed as a parameters. 
+It is the main script to call other sub scripts. Drug name MUST be passed as a parameters.    
+
 ex usage: sh generic_CNI_master.sh alemtuzumab    
 
 *2-pub_pir_scores.sql*      
