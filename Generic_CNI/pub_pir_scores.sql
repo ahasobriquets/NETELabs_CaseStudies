@@ -6,8 +6,7 @@
 
 
 
--- Passing parameters: drug drug_pub_nodelist drug_pub_edgelist drug_scopus_pub_auth
--- as node_list and edge_list
+-- Passing parameters: drug drug_pub_nodelist drug_pub_edgelist drug_scopus_pub_auth as node_list and edge_list
 drop table if exists drug_test_network;
 select distinct pub_sid into drug_test_network from :node_list;
 
