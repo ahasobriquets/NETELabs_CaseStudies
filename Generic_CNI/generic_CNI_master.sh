@@ -1,7 +1,7 @@
 
 # Author: Samet Keserci
 # Usage: sh generic_CNI_master.sh [drug_name]
-
+# Date: 02/06/17
 
 drug_name=$1
 
