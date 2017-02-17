@@ -17,7 +17,7 @@ It generates the author raw PIR and RRBR scores where PIR stansd for propagated 
 At the and of the process: we will have following five tables:  
   
 _{drug_name}_author_pir_degenerate_rrbr  
-_{drug_name}_author_pir_rrbr
+_{drug_name}_author_pir_rrbr    
 _{drug_name}_author_pir_rrbr_merged    
 _{drug_name}_test_network   
 _{drug_name}_testnetwork_citation  
