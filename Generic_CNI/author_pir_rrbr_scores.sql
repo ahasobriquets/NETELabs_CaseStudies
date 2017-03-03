@@ -41,5 +41,13 @@ select
 into drug_author_pir_rrbr_merged
 from orig_table a, merged_table b where a.full_name = b.full_name_merged;
 
+drop table if exists drug_author_pir_rrbr_final;
+with
+auth_no_dot as (select auth_sid, replace(full_name,'.','') as last_first_inital, replace(last_name,'.','') as last_name, replace(first_name,'.','') as first_name from :author_pub),
+auth_lower as (select auth_sid, lower(last_name) as last_name, lower(first_name) as first_name, lower(last_first_inital) as last_first_initial from auth_no_dot)
+select distinct a.auth_sid, a.full_name, b. last_name,b.first_name, b. last_first_initial,a.doc_count_test,a.doc_count_total,a.auth_rrbr,a.auth_pir into drug_author_pir_rrbr_final from drug_author_pir_rrbr a inner join auth_lower b on a.auth_sid = b.auth_sid;
+
+
+
 --Cleaning intermediate tables
 drop table if exsits temp_testnetwork_pub_auth_pir;

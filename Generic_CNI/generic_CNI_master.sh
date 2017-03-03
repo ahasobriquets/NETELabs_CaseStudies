@@ -17,6 +17,7 @@ psql -d elsevier -v author_pub=$authorpub -f author_pir_rrbr_scores.sql
 
 # drop old ones
 psql -d elsevier -c "drop table if exists  ${drug_name}_author_pir_degenerate_rrbr"
+psql -d elsevier -c "drop table if exists  ${drug_name}_author_pir_rrbr_final"
 psql -d elsevier -c "drop table if exists  ${drug_name}_author_pir_rrbr"
 psql -d elsevier -c "drop table if exists  ${drug_name}_test_network"
 psql -d elsevier -c "drop table if exists  ${drug_name}_testnetwork_citation"
@@ -25,6 +26,7 @@ psql -d elsevier -c "drop table if exists  ${drug_name}_author_pir_rrbr_merged"
 # rename the new ones
 psql -d elsevier -c "alter table drug_author_pir_degenerate_rrbr rename to ${drug_name}_author_pir_degenerate_rrbr"
 psql -d elsevier -c "alter table drug_author_pir_rrbr rename to ${drug_name}_author_pir_rrbr"
+psql -d elsevier -c "alter table drug_author_pir_rrbr_final rename to ${drug_name}_author_pir_rrbr_final"
 psql -d elsevier -c "alter table drug_author_pir_rrbr_merged rename to ${drug_name}_author_pir_rrbr_merged"
 psql -d elsevier -c "alter table drug_test_network rename to ${drug_name}_test_network"
 psql -d elsevier -c "alter table drug_testnetwork_citation rename to ${drug_name}_testnetwork_citation"
