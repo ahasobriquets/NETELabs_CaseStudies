@@ -17,7 +17,7 @@ psql -d elsevier -v drug_name=$drug_name -f create_scopus_tables.sql
 sh load_scopus_data.sh $drug_name
 
 # calculate the citations, PIr and RRBR scores
-psql -d elsevier -v node_list=$nodelist -v edge_list=$edgelist -v -f test_parameter.sql
+psql -d elsevier -v node_list=$nodelist -v edge_list=$edgelist -v -f pub_pir_scores.sql
 psql -d elsevier -v author_pub=$authorpub -f author_pir_rrbr_scores.sql
 
 # Renaming the tables according to drug name

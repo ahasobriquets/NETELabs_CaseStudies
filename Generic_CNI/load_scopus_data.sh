@@ -20,6 +20,9 @@ psql -d elsevier -c "\copy ${drug_name}_scopus_pub_src from '/labdata1/NETELabs_
 psql -d elsevier -c "\copy ${drug_name}_scopus_pub_subj from '/labdata1/NETELabs_CaseStudies/${drug_name}/scopus_data/pub_subj.csv' with delimiter ',' csv header; "
 
 
-# handle de null values in doc_count columns
+# handle the null values in doc_count columns
 psql -d elsevier -c "update ${drug_name}_scopus_pub_auth set doc_count=(case when doc_count='' then '0' else doc_count end);"
 psql -d elsevier -c "alter table ${drug_name}_scopus_pub_auth alter column doc_count type Integer using doc_count::integer;"
+
+# handle the null pmids
+psql -d elsevier -c "update ${drug_name}_scopus_pub_out set pmid=(case when pmid='' then Null else pmid end);"
