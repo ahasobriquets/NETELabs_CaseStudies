@@ -13,23 +13,24 @@
   * institution (may not be needed)
   * author (may not be needed)
 
-3. The term root is reserved for sunitinib, a tyrosine kinase inhibitor, also known as Sutent (Pfizer), . FDA approval for Sutent was granted in Jan 2006. In searching for publications, 
-clinical trials etc. a 60 day allowance was made for 'publication lag'.
+3. The term root is reserved for sunitinib, a tyrosine kinase inhibitor, also known as Sutent (Pfizer), . FDA approval for Sutent was granted in Jan 2006. In searching for publications, clinical trials etc. a 60 day allowance was made for 'publication lag'.
 
-4. Data are stored in a four column format where source and target contain unique identifiers for nodes and stype and ntype refer to node types for source and target respectively. An example 
-is provided below and does not necessarily represent real data for the alemtuzumab network.
+4. Data are stored in a four column format where source and target contain unique identifiers for nodes and stype and ntype refer to node types for source and target respectively. The example below  is provided below and does not necessarily represent real data for the alemtuzumab network.
 
-| source | stype | target | ttype |
-|  :---   | :--- | :--- | :--- |
-| Sutent | root | NCT11265 | ct |
-| Sutent | root | 8652811  | pmid1 |
+| source | stype | target   | ttype |
+|  :---  | :---  | :---     | :---  |
+| Sutent | root  | NCT11265 | ct    |
+| Sutent | root  | 8652811  | pmid1 |
 
-5. Ancillary files
+5. In the sunitinib study, we also incorporate clinical trials that do not have NCT ids by searching PubMed for sunitinib, applying a dtae restriction (1900/01/01 to 2006/03/31), and publication type as clinical trial. This picked up 5 more pmids and may assume considerable relevance if preceding influential trials were not registered with the National Clinical Trials database. 
+
+6. Ancillary files
   * sunitinib_fda: copy of NDA approval includes multiple pmids from the Medical Review. NDA number is 021938
+  * sunitinib_fda-csv: pmids and citation data using Rentrez with manual pasting into pubmed of lines from sunitinib_fda
   * sunitinib_npl: non-patent literature citations scraped from the Google patents data for sunitinib corresponding to patent nos 6573293,7125905,7211600
-  * alemtuzumab.csv: patents data from EspaceNet (not very useful)
-  * alemtuzumab_pubmed: pre 3/31/2006 search for sunitinib in Pubmed
-  * alemtuzumab_pubmed_nct: pre 3/31/2006 search for sunitinib in Pubmed with publication type set to clinical trial
+  * sunitinib_pubmed: pre 3/31/2006 search for sunitinib in Pubmed
+  * sunitinib_pubmed_nct: pre 3/31/2006 search for sunitinib in Pubmed with publication type set to clinical trial
+  * sunitinib.csv: patents data from EspaceNet (not very useful)
 
 ## Workflow Description
 
