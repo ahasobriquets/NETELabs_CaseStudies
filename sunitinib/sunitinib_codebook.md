@@ -22,7 +22,7 @@
 | Sutent | root  | NCT11265 | ct    |
 | Sutent | root  | 8652811  | pmid1 |
 
-5. In the sunitinib study, we also incorporate clinical trials that do not have NCT ids by searching PubMed for sunitinib, applying a dtae restriction (1900/01/01 to 2006/03/31), and PDAT
+5. In the sunitinib study, we also incorporate clinical trials that do not have NCT ids by searching PubMed for sunitinib, applying a dtae restriction (1900/01/01 to 2006/03/31), and publication type as clinical trial. This picked up 5 more pmids and may assume considerable relevance if preceding influential trials were not registered with the National Clinical Trials database. 
 
 6. Ancillary files
   * sunitinib_fda: copy of NDA approval includes multiple pmids from the Medical Review. NDA number is 021938
