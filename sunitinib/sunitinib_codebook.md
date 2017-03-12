@@ -1,4 +1,4 @@
-#  Alemtuzumab Code Book
+#  Sunitinib Code Book
 
 ## A cure informatics network (Williams et al. 2015), with modifications introduced by this collaborative effort, is being constructed for the anti-cancer biological, Sunitinib. 
 
