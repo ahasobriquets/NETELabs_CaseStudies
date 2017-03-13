@@ -4,7 +4,7 @@
 -- Author: Lingtian "Lindsay" Wan
 -- Create Date: 01/25/2017
 
--- drug* will be replaced by the actual drug_name  
+-- drug* will be replaced by the actual drug_name
 
 
 -- Create gen1 scopus-id
