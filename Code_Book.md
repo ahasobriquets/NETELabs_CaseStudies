@@ -56,8 +56,13 @@ plus pmids for any references that were scraped from the NDA/BLA approval
   |  :---   | :--- | :--- | :--- |
   | drug/biol | root | fda_identifier | fda |
   | drug/bio | root | ct_identifier | ct
+<<<<<<< HEAD
   | drug/bio | root | patent_no | pt |
   | drug/bio | root | pmid | pmid1 |
+=======
+  | drug/bio | root | patent_identifier | ct |
+  | drug/bio | root | pmid | pmid1|
+>>>>>>> a7108e4c880cfe523416e584a543c79a5da29062
   | fda_identifier | fda| pmid | pmid1 |
   | ct_identifier | ct | pmid | pmid1 |
   | patent_no | pt | pmid | pmid1 |
