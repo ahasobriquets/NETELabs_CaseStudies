@@ -1,0 +1,54 @@
+A manual search of clinicaltrials.gov revealed multiple clinical
+trials that began before 7/31/2001 (see
+/Users/George/NETELabs_CaseStudies/assembly/alemtuzumab_assembly
+alemtuzumab_nctsearch.csv executed on 4/7/2017) although all of them
+completed well after that date. Thus, none of these NCT IDs have been
+included in the retrospective trace.
+
+A secondary search of PubMed was used to search for papers classified
+as clinical trials using ((("alemtuzumab"[Supplementary Concept] OR
+"alemtuzumab"[All Fields]) OR ("alemtuzumab"[Supplementary Concept] OR
+"alemtuzumab"[All Fields] OR "campath"[All Fields])) AND
+("1900/0101"[PDAT] : "2001/07/31"[PDAT])) AND "clinical
+trial"[Publication Type] Executed 4/7/2017- pmids are below
+
+12171729
+12171727
+12171726
+12171723
+12171714
+11342359
+11001893
+10773997
+10589966
+10568572
+10482259
+10417050
+10390197
+10350345
+9845524
+9779699
+9502298
+9235735
+9215839
+9195505
+9250818
+9193354
+9049965
+8707338
+8611450
+8722340
+8671618
+7488279
+7575719
+7575711
+7632956
+7655382
+7531440
+7920312
+7922004
+8324942
+1391938
+1356177
+2667209
+2480280

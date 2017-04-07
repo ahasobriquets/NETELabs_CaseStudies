@@ -124,7 +124,7 @@ IDs and then back to pmids
 7. pmid1 to grants and pmid2 to grants: using NIH ExPORTER data [needs
 to be expanded on]
 
-8. authors and institions: derived from Scopus data
+8. authors and institutions: derived from Scopus data
  
 
 
