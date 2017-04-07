@@ -27,6 +27,8 @@ alem_patent2 <- c("alemtuzumab","root","us5846534","patent")
 
 alem_pmid1_1 <- alem_pmid1 %>% mutate(source="alemtuzumab",stype="root",
 target=pmid,ttype="pmid1") %>% select(source,stype,target,ttype)
+# reads csv file from 
+# ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R
 alem_pmid1_2 <- read.csv("alem_rev.csv",stringsAsFactors=FALSE)
 
 alem_merge1 <-rbind(alem_ct1,alem_ct2,alem_patent1,alem_patent2,alem_fda1,alem_fda2,
