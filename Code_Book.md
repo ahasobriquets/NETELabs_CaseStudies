@@ -44,7 +44,8 @@ Required files (substitute specific drug or biological names for drug as appropr
   |  :---   | :--- | :--- | :--- |
   | drug/biol | root | fda_identifier | fda |
   | drug/bio | root | ct_identifier | ct
-  | drug/bio | root | patent_no | pt |
+  | drug/bio | root | patent_identifier | ct |
+  | drug/bio | root | pmid | pmid1|
   | fda_identifier | fda| pmid | pmid1 |
   | ct_identifier | ct | pmid | pmid1 |
   | patent_no | pt | pmid | pmid1 |
