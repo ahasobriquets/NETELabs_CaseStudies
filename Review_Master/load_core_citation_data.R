@@ -65,6 +65,6 @@ write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ra
 row.names=FALSE)
 
 suni_rev <- final_table %>% filter(source=="sunitinib")
-write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/imatinib_assembly/suni_rev.csv",
+write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/sunitinib_assembly/suni_rev.csv",
 row.names=FALSE)
 
