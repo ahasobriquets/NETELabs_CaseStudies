@@ -57,14 +57,14 @@ write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_
 row.names=FALSE)
 
 nela_rev <- final_table %>% filter(source=="nelarabine")
-write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nela_rev.csv",
+write.csv(nela_rev,file="~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nela_rev.csv",
 row.names=FALSE)
 
 ramu_rev <- final_table %>% filter(source=="ramucirumab")
-write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ramu_rev.csv",
+write.csv(ramu_rev,file="~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ramu_rev.csv",
 row.names=FALSE)
 
 suni_rev <- final_table %>% filter(source=="sunitinib")
-write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/sunitinib_assembly/suni_rev.csv",
+write.csv(suni_rev,file="~/NETELabs_CaseStudies/assembly/sunitinib_assembly/suni_rev.csv",
 row.names=FALSE)
 
