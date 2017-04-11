@@ -1,5 +1,9 @@
 # imatinib_merge.R 
-# 4/7/2017
+# 4/10/2017
+# Before running this script the load_core_citation_data.R script
+# shoud be run after editing it to ensure that a drug_rev.R file is generated
+# in the appropriate drug_assembly folder
+
 
 setwd("~/NETELabs_CaseStudies/assembly/imatinib_assembly/")
 system("git pull")
@@ -42,19 +46,34 @@ select(target) %>% unique()
 
 ae1 <- imat_eric1[1:400,]
 ae1 <- as.integer(ae1)
-ae2 <- imat_eric1[401:length(imat_eric1$target),]
+ae2 <- imat_eric1[401:800,]
 ae2 <- as.integer(ae2)
+ae3 <- imat_eric1[801:1200,]
+ae3 <- as.integer(ae3)
+ae4 <- imat_eric1[1201:length(imat_eric1$target),]
+ae3 <- as.integer(ae3)
 
 library(rentrez)
 ae1_1 <- entrez_summary(db="pubmed",id=ae1)
-Sys.sleep(30)
+print("ae1 rentrez_summaried")
+Sys.sleep(60)
 ae2_1 <- entrez_summary(db="pubmed",id=ae2)
-source ("~/NETELabs_CaseStudies/assembly/ericformat.R")
+print("ae2 rentrez_summaried")
+Sys.sleep(60)
+ae3_1 <- entrez_summary(db="pubmed",id=ae2)
+print("ae3 rentrez_summaried")
+Sys.sleep(60)
+ae4_1 <- entrez_summary(db="pubmed",id=ae2)
+print("ae4 rentrez_summaried")
+Sys.sleep(60)
 
+source ("~/NETELabs_CaseStudies/assembly/ericformat.R")
 ae1_2 <- ericFormat(ae1_1)
 ae2_2 <- ericFormat(ae2_1)
+ae3_2 <- ericFormat(ae3_1)
+ae4_2 <- ericFormat(ae4_1)
 
-imat_eric_stage1 <- rbind(ae1_2,ae2_2)
+imat_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2)
 write.csv(imat_eric_stage1,file="imat_eric_stage1.csv")
 
 
