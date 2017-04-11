@@ -53,5 +53,5 @@ write.csv(alem_rev,file="~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/al
 row.names=FALSE)
 
 imat_rev <- final_table %>% filter(source=="alemtuzumab")
-write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/imat_rev.csv",
+write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_rev.csv",
 row.names=FALSE)
