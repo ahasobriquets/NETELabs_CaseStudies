@@ -51,7 +51,7 @@ ae2 <- as.integer(ae2)
 ae3 <- imat_eric1[801:1200,]
 ae3 <- as.integer(ae3)
 ae4 <- imat_eric1[1201:length(imat_eric1$target),]
-ae3 <- as.integer(ae3)
+ae4 <- as.integer(ae4)
 
 library(rentrez)
 ae1_1 <- entrez_summary(db="pubmed",id=ae1)
