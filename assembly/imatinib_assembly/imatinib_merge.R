@@ -30,6 +30,8 @@ imat_pmid1_1 <- imat_pmid1 %>% mutate(source="imatinib",stype="root",
 target=pmid,ttype="pmid1") %>% select(source,stype,target,ttype)
 # reads csv file from 
 # ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R
+source("/Users/George/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R")
+setwd("~/NETELabs_CaseStudies/assembly/imatinib_assembly/")
 imat_pmid1_2 <- read.csv("imat_rev.csv",stringsAsFactors=FALSE)
 
 imat_merge1 <-rbind(imat_ct1,imat_ct2,imat_patent1,imat_patent2,imat_fda1,imat_fda2,
