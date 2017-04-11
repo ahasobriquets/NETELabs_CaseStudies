@@ -55,3 +55,16 @@ row.names=FALSE)
 imat_rev <- final_table %>% filter(source=="alemtuzumab")
 write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_rev.csv",
 row.names=FALSE)
+
+nela_rev <- final_table %>% filter(source=="nelarabine")
+write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nela_rev.csv",
+row.names=FALSE)
+
+ramu_rev <- final_table %>% filter(source=="ramucirumab")
+write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ramu_rev.csv",
+row.names=FALSE)
+
+suni_rev <- final_table %>% filter(source=="sunitinib")
+write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/imatinib_assembly/suni_rev.csv",
+row.names=FALSE)
+
