@@ -17,13 +17,14 @@ ttype="pmid1") %>% select(source,stype,target,ttype)
 imat_ct2 <- imat_ct %>% mutate(source="imatinib",stype="root",
 target=paste(pmid,"_ct",sep=""),ttype="ct") %>% select(source,stype,target,ttype)
 
-imat_fda1 <- imat_fda %>% mutate(source="bla_103948",stype="fda",target=pmid,
+imat_fda1 <- imat_fda %>% mutate(source="nda_21335",stype="fda",target=pmid,
 ttype="pmid1") %>% select(source,stype,target,ttype) 
-imat_fda2 <- c("imatinib","root","bla_103948","fda")
+imat_fda2 <- c("imatinib","root","nda_21335","fda")
 
-imat_patent1 <- imat_patents %>% mutate(source="us5846534",stype="patent",
+# no patent citations in Gleevec document but run this section anyway
+imat_patent1 <- imat_patents %>% mutate(source="us5521184",stype="patent",
 target=pmid,ttype="pmid1") %>% select(source,stype,target,ttype)
-imat_patent2 <- c("imatinib","root","us5846534","patent")
+imat_patent2 <- c("imatinib","root","us5521184","patent")
 
 imat_pmid1_1 <- imat_pmid1 %>% mutate(source="imatinib",stype="root",
 target=pmid,ttype="pmid1") %>% select(source,stype,target,ttype)
