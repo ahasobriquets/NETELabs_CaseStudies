@@ -47,3 +47,11 @@ final_table_b <- final_table_a %>% mutate(stype="review",ttype="root") %>% selec
 final_table_c <- final_table_a %>% mutate(stype="root",ttype="pmid1") %>% select(source=drug,stype,target=cited_pmid,ttype) %>% unique()
 final_table <- rbind(final_table_b,final_table_c) 
 final_table <- final_table %>% unique()
+
+alem_rev <- final_table %>% filter(source=="alemtuzumab")
+write.csv(alem_rev,file="~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/alem_rev.csv",
+row.names=FALSE)
+
+imat_rev <- final_table %>% filter(source=="alemtuzumab")
+write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/imat_rev.csv",
+row.names=FALSE)
