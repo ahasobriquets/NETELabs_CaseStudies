@@ -52,7 +52,7 @@ alem_rev <- final_table %>% filter(source=="alemtuzumab")
 write.csv(alem_rev,file="~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/alem_rev.csv",
 row.names=FALSE)
 
-imat_rev <- final_table %>% filter(source=="alemtuzumab")
+imat_rev <- final_table %>% filter(source=="imatinib")
 write.csv(imat_rev,file="~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_rev.csv",
 row.names=FALSE)
 
