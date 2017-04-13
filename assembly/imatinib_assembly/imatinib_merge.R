@@ -52,7 +52,7 @@ ttype="pmid1") %>% select(source,stype,target,ttype)
 imat_fda3 <- c("imatinib","root","nda_21335","fda")
 
 ## Patent Component
-imat_patent <- read.csv("imatinib_patent.csv",stringsAsFactors=FALSE)
+imat_patent <- read.csv("imatinib_patent_npl.csv",stringsAsFactors=FALSE)
 imat_patent1 <- imat_patent %>% mutate(source="us5521184",stype="patent",
 target=pmid,ttype="pmid1") %>% select(source,stype,target,ttype)
 imat_patent2 <- c("imatinib","root","us5521184","patent")
@@ -105,6 +105,7 @@ ae4_2 <- ericFormat(ae4_1)
 
 # Write out final output for eric
 imat_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2)
+imat_eric_stage1 <- na.omit(imat_eric_stage1)
 imat_eric_stage1 <- imat_eric_stage1 %>% mutate(drug_name="imatinib")
 write.csv(imat_eric_stage1,file="imat_eric_stage1.csv")
 
