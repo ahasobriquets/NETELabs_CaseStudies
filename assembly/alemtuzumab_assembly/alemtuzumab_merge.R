@@ -52,7 +52,7 @@ ttype="pmid1") %>% select(source,stype,target,ttype)
 alem_fda3 <- c("alemtuzumab","root","bla_103948","fda")
 
 ## Patent Component
-alem_patent <- read.csv("alemtuzumab_patent.csv",stringsAsFactors=FALSE)
+alem_patent <- read.csv("alemtuzumab_patent_npl.csv",stringsAsFactors=FALSE)
 alem_patent1 <- alem_patent %>% mutate(source="us5846534",stype="patent",
 target=pmid,ttype="pmid1") %>% select(source,stype,target,ttype)
 alem_patent2 <- c("alemtuzumab","root","us5846534","patent")
@@ -95,6 +95,7 @@ ae2_2 <- ericFormat(ae2_1)
 
 # Write out final output for eric
 alem_eric_stage1 <- rbind(ae1_2,ae2_2)
+alem_eric_stage1 <- na.omit(alem_eric_stage1)
 alem_eric_stage1 <- alem_eric_stage1 %>% mutate(drug_name="alemtuzumab")
 write.csv(alem_eric_stage1,file="alem_eric_stage1.csv")
 
