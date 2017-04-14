@@ -84,8 +84,10 @@ ae2 <- ramu_eric1[401:800,]
 ae2 <- as.integer(ae2)
 ae3 <- ramu_eric1[801:1200,]
 ae3 <- as.integer(ae3)
-ae4 <- ramu_eric1[1201:length(ramu_eric1$target),]
+ae4 <- ramu_eric1[1201:1600,]
 ae4 <- as.integer(ae4)
+ae5 <- ramu_eric1[1601:length(ramu_eric1$target),]
+ae5 <- as.integer(ae5)
 
 library(rentrez)
 ae1_1 <- entrez_summary(db="pubmed",id=ae1)
@@ -95,6 +97,8 @@ Sys.sleep(120)
 ae3_1 <- entrez_summary(db="pubmed",id=ae3)
 Sys.sleep(120)
 ae4_1 <- entrez_summary(db="pubmed",id=ae4)
+Sys.sleep(120)
+ae5_1 <- entrez_summary(db="pubmed",id=ae5)
 
 # Call Custom Function to build data frame from list
 source ("~/NETELabs_CaseStudies/assembly/ericformat.R")
@@ -102,9 +106,10 @@ ae1_2 <- ericFormat(ae1_1)
 ae2_2 <- ericFormat(ae2_1)
 ae3_2 <- ericFormat(ae3_1)
 ae4_2 <- ericFormat(ae4_1)
+ae5_2 <- ericFormat(ae5_1)
 
 # Write out final output for eric
-ramu_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2)
+ramu_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2,ae5_2)
 ramu_eric_stage1 <- na.omit(ramu_eric_stage1)
 ramu_eric_stage1 <- ramu_eric_stage1 %>% mutate(drug_name="ramucirumab")
 write.csv(ramu_eric_stage1,file="ramu_eric_stage1.csv")
