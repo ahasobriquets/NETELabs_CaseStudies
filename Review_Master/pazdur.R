@@ -22,6 +22,25 @@ pazdur <- rbind(pazdur_b,pazdur_c)
 pazdur <- pazdur[complete.cases(pazdur),]
 pazdur <- pazdur %>% arrange(stype,source)
 
+alemtuzumab_fda_pazdur <- pazdur %>% filter(source=="alemtuzumab") %>% select(pmid=target) %>% 
+unique() 
+write.csv(alemtuzumab_fda_pazdur, "~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/alem_rev.csv",row.names=FALSE)
+imatinib_fda_pazdur <- pazdur %>% filter(source=="imatinib") %>% select(pmid=target) %>% 
+unique() 
+write.csv(imatinib_fda_pazdur, "~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_rev.csv",row.names=FALSE)
+nelarabine_fda_pazdur <- pazdur %>% filter(source=="nelarabine") %>% select(pmid=target) %>% 
+unique() 
+write.csv(nelarabine_fda_pazdur, "~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nela_rev.csv",row.names=FALSE)
+ramucirumab_fda_pazdur <- pazdur %>% filter(source=="ramucirumab") %>% select(pmid=target) %>% 
+unique() 
+write.csv(ramucirumab_fda_pazdur, "~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ramu_rev.csv",row.names=FALSE)
+sunitinib_fda_pazdur <- pazdur %>% filter(source=="sunitinib") %>% select(pmid=target) %>% 
+unique()
+write.csv(sunitinib_fda_pazdur, "~/NETELabs_CaseStudies/assembly/sunitinib_assembly/suni_rev.csv",row.names=FALSE) 
+
+
+
+
 
 
 
