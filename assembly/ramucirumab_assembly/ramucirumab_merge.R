@@ -1,5 +1,5 @@
 # imatinib_merge.R 
-# 4/12/2017
+# 4/14/2017
 # Before running this script the load_core_citation_data.R script
 # shoud be run after editing it to ensure that a drug_rev.R file is generated
 # in the appropriate drug_assembly folder
