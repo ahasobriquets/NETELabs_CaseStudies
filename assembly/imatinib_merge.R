@@ -14,9 +14,6 @@
 # imatinib_pubmed.csv (single column, header is pmid)
 # imat_rev.csv (product of ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R)
 
-# ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R
-source("/Users/George/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R")
-
 setwd("~/NETELabs_CaseStudies/assembly/imatinib_assembly/")
 system("git pull")
 rm(list=ls())
@@ -75,6 +72,7 @@ write.csv(imat_merge1,file="imat_merge1.csv")
 ## Generate a list of unique pmids for Eric
 imat_eric1 <- imat_merge1 %>% filter(ttype=="pmid1") %>% 
 select(target) %>% unique()
+imat_eric1 <- na.omit(imat_eric1)
 print(dim(imat_eric1))
 
 ## Format list per Eric's specs using rentrez in chunks
@@ -105,7 +103,6 @@ ae4_2 <- ericFormat(ae4_1)
 
 # Write out final output for eric
 imat_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2)
-imat_eric_stage1 <- na.omit(imat_eric_stage1)
 imat_eric_stage1 <- imat_eric_stage1 %>% mutate(drug_name="imatinib")
 write.csv(imat_eric_stage1,file="imat_eric_stage1.csv")
 

@@ -75,6 +75,7 @@ write.csv(ramu_merge1,file="ramu_merge1.csv")
 ## Generate a list of unique pmids for Eric
 ramu_eric1 <- ramu_merge1 %>% filter(ttype=="pmid1") %>% 
 select(target) %>% unique()
+ramu_eric1 <- na.omit(ramu_eric1)
 print(dim(ramu_eric1))
 
 ## Format list per Eric's specs using rentrez in chunks
@@ -110,7 +111,6 @@ ae5_2 <- ericFormat(ae5_1)
 
 # Write out final output for eric
 ramu_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2,ae5_2)
-ramu_eric_stage1 <- na.omit(ramu_eric_stage1)
 ramu_eric_stage1 <- ramu_eric_stage1 %>% mutate(drug_name="ramucirumab")
 write.csv(ramu_eric_stage1,file="ramu_eric_stage1.csv")
 
