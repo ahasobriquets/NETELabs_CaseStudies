@@ -12,10 +12,13 @@ source("~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/alemtuzumab_merge.R
 source ("~/NETELabs_CaseStudies/assembly/imatinib_assembly/imatinib_merge.R")
 
 # Run nelarabine_merge.R
+source ("~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nelarabine_merge.R")
 
 # Run ramucirumab_merge.R
+source ("~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ramucirumab_merge.R")
 
 # Run sunitinib_merge.R
+source ("~/NETELabs_CaseStudies/assembly/sunitinib_assembly/sunitinib_merge.R")
 
 
 
