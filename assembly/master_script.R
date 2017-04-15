@@ -1,6 +1,6 @@
 # Assembles data for all five drugs by calling individual scripts consecutively
 
-# Run load_citation. TThis script flattens Eric Livingston's data to generate
+# Run load_core_citation. This script flattens Eric Livingston's data to generate
 # a list of pmid1s of cited references derived from reviews of relevant literature
 
 source("~//NETELabs_CaseStudies/Review_Master/load_core_citation_data.R")
