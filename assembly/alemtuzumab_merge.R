@@ -14,10 +14,6 @@
 # alemtuzumab_pubmed.csv (single column, header is pmid)
 # alem_rev.csv (product of ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R)
 
-# ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R
-# This script generates a set of citations from reviews of the drug/biological in question 
-source("/Users/George/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R")
-
 setwd("~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/")
 system("git pull")
 rm(list=ls())
