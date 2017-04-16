@@ -83,7 +83,7 @@ ae1 <- nela_eric1[1:length(nela_eric1$target),]
 ae1 <- as.integer(ae1)
 library(rentrez)
 ae1_1 <- entrez_summary(db="pubmed",id=ae1)
-Sys.sleep(10)
+# Sys.sleep(120)
 
 # Call Custom Function to build data frame from list
 source ("~/NETELabs_CaseStudies/assembly/ericformat.R")

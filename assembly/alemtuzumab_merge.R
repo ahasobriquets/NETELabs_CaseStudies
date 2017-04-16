@@ -83,7 +83,7 @@ ae2 <- as.integer(ae2)
 
 library(rentrez)
 ae1_1 <- entrez_summary(db="pubmed",id=ae1)
-Sys.sleep(30)
+Sys.sleep(120)
 ae2_1 <- entrez_summary(db="pubmed",id=ae2)
 
 # Call Custom Function to build data frame from list
