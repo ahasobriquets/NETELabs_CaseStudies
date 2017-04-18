@@ -14,9 +14,6 @@
 # sunitinib_pubmed.csv (single column, header is pmid)
 # suni_rev.csv (product of ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R)
 
-# ~/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R
-source("/Users/George/NETELabs_CaseStudies/Review_Master/load_core_citation_data.R")
-
 setwd("~/NETELabs_CaseStudies/assembly/sunitinib_assembly/")
 system("git pull")
 rm(list=ls())
