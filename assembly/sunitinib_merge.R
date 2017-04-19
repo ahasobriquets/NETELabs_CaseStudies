@@ -99,11 +99,11 @@ Sys.sleep(120)
 source ("~/NETELabs_CaseStudies/assembly/ericformat.R")
 ae1_2 <- ericFormat(ae1_1)
 ae2_2 <- ericFormat(ae2_1)
-ae2_2 <- ericFormat(ae3_1)
+ae3_2 <- ericFormat(ae3_1)
 ae4_2 <- ericFormat(ae4_1)
 
 # Write out final output for eric
-suni_eric_stage1 <- rbind(ae1_2,ae2_2,ae3-2,ae4_2)
+suni_eric_stage1 <- rbind(ae1_2,ae2_2,ae3_2,ae4_2)
 suni_eric_stage1 <- suni_eric_stage1 %>% mutate(drug_name="sunitinib")
 write.csv(suni_eric_stage1,file="suni_eric_stage1.csv")
 
