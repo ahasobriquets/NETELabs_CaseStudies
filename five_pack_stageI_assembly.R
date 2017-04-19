@@ -13,4 +13,5 @@ library(dplyr)
 five_pack_stageI %>% nrow()
 five_pack_stageI %>% unique() %>% nrow()
 five_pack_stageI <- five_pack_stageI %>% unique()
+
 write.csv(five_pack_stageI,file="five_pack_stageI.csv",row.names=FALSE)
