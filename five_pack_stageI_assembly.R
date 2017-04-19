@@ -9,6 +9,8 @@ suni <- read.csv("~/NETELabs_CaseStudies/assembly/sunitinib_assembly/suni_eric_s
 five_pack_stageI <- rbind(alem,imat,nela,ramu,suni)
 five_pack_stageI <- five_pack_stageI[,-c(1,9)]
 colnames(five_pack_stageI) <- c("pmid","pubdate","firstauthor","lastauthor","source","title","year")
+five_pack_stageI[,"eid"] <- NA
+five_pack_stageI <- five_pack_stageI %>% select (pmid, eid, pubdate,firstauthor,lastauthor,source,title,year)
 library(dplyr)
 five_pack_stageI %>% nrow()
 five_pack_stageI %>% unique() %>% nrow()
