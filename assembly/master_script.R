@@ -27,6 +27,10 @@ source ("~/NETELabs_CaseStudies/assembly/sunitinib_merge.R")
 # Run metadata.R - collects edge counts by node type
 source ("~/NETELabs_CaseStudies/assembly/metadata.R")
 
+# Run five_pack to assemble data for Eric
+source("~/NETELabs_CaseStudies/five_pack_stageI_assembly.R")
+
+
 
 
 
