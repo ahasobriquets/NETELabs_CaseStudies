@@ -140,11 +140,21 @@ colnames(t1) <- ("doc_sid")
 suni_m4 <- merge(t1,final_authors,by.x="doc_sid",by.y="PubSID",all.x=TRUE)
 colnames(suni_m4) <- c("doc_sid","auth_sid","FullName","LastName","FirstName","Initials","DocCount")
 
+alem_m4 <- alem_m4 %>% mutate(drug="alem")
+imat_m4 <- imat_m4 %>% mutate(drug="imat")
+nela_m4 <- nela_m4 %>% mutate(drug="nela")
+ramu_m4 <- ramu_m4 %>% mutate(drug="ramu")
+suni_m4 <- suni_m4 %>% mutate(drug="suni")
+
 write.csv(alem_m4,file="alem_authref.csv")
 write.csv(imat_m4,file="imat_authref.csv")
 write.csv(nela_m4,file="nela_authref.csv")
 write.csv(ramu_m4,file="ramu_authref.csv")
 write.csv(suni_m4,file="suni_authref.csv")
+
+
+
+
 
 
 
