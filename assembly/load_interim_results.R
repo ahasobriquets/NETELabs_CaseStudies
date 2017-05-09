@@ -90,7 +90,7 @@ alem_m3 <- alem_m3 %>% mutate(drug="alem") %>% select(citing_pmid,citing_sid,cit
 
 imat_m3 <- merge(imat_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(imat_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
-imat_m3 <- alem_m3 %>% mutate(drug="imat") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
+imat_m3 <- imat_m3 %>% mutate(drug="imat") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
 
 nela_m3 <- merge(nela_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(nela_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
@@ -109,5 +109,14 @@ write.csv(imat_m3,file="imat_pubref.csv")
 write.csv(nela_m3,file="nela_pubref.csv")
 write.csv(ramu_m3,file="ramu_pubref.csv")
 write.csv(suni_m3,file="suni_pubref.csv")
+
+library(caroline)
+write.delim(alem_m3, file="alem_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(imat_m3, file="imat_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(nela_m3, file="nela_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(ramu_m3, file="ramu_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(suni_m3, file="suni_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
+
+
 
 
