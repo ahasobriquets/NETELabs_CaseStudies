@@ -152,6 +152,13 @@ write.csv(nela_m4,file="nela_authref.csv")
 write.csv(ramu_m4,file="ramu_authref.csv")
 write.csv(suni_m4,file="suni_authref.csv")
 
+library(caroline)
+write.delim(alem_m4,file="alem_authref.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(imat_m4,file="imat_authref.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(nela_m4,file="nela_authref.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(ramu_m4,file="ramu_authref.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(suni_m4,file="suni_authref.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+
 
 
 
