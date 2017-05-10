@@ -59,6 +59,12 @@ suni_proj <- suni_proj[complete.cases(suni_proj),]
 suni_proj_ss <- merge(suni_proj,wep,by.x="project_number",by.y="core_project_num",all.x=TRUE)
 suni_proj_ss <- suni_proj_ss[complete.cases(suni_proj_ss),]
 
+library(caroline)
+write.delim(alem_proj_ss,file="alem_proj_ss.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(imat_proj_ss,file="imat_proj_ss.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(nela_proj_ss,file="nela_proj_ss.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(ramu_proj_ss,file="ramu_proj_ss.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(suni_proj_ss,file="suni_proj_ss.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
 
 
 
