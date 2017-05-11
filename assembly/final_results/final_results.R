@@ -92,7 +92,7 @@ alem_m3 <- alem_m3 %>% mutate(drug="alem") %>% select(citing_pmid,citing_sid,cit
 
 imat_m3 <- merge(imat_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(imat_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
-imat_m3 <- alem_m3 %>% mutate(drug="imat") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
+imat_m3 <- imat_m3 %>% mutate(drug="imat") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
 
 nela_m3 <- merge(nela_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(nela_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
