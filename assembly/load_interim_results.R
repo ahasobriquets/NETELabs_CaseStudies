@@ -3,18 +3,18 @@ rm(list=ls())
 # Load 9 csv files from Eric Livingston into a list
 
 setwd("~/NETELabs_CaseStudies/assembly/interim_results")
-temp <- list.files(pattern="*.csv")
-interim_results <- list()
-for (i in 1:length(temp)) {
-	interim_results[[i]] <- read.csv(temp[i],stringsAsFactors=FALSE,header=TRUE)
-}
-names(interim_results) <- temp
-rm(i)
-save(interim_results,file="interim_results.RData")
+#temp <- list.files(pattern="*.csv")
+#interim_results <- list()
+#for (i in 1:length(temp)) {
+#	interim_results[[i]] <- read.csv(temp[i],stringsAsFactors=FALSE,header=TRUE)
+#}
+#names(interim_results) <- temp
+#rm(i)
+#save(interim_results,file="interim_results.RData")
 
-# Extract pub_out (pmid-SID) and pub_cites (PubSID to SID) from list as data frames
-pub_out <- interim_results[['pub_out.csv']]
-pub_cites <- interim_results[['pub_cites.csv']]
+# Read in pub_out (pmid-SID) and pub_cites (PubSID to SID) 
+pub_out <- read.csv("pub_out.csv",colClasses=rep("character",6))
+pub_cites <- read.csv("pub_cites.csv",colClasses=rep("character",9))
 # free up memory
 rm(interim_results)
 # print str stats
@@ -23,15 +23,15 @@ str(pub_cites)
 
 # load Stage I files that Eric used to generate pub_out and pub_cites
 alem <- read.csv("~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/alem_eric_stage1.csv",
-stringsAsFactors=FALSE)
+colClasses=c(rep("character,9")))
 imat <- read.csv("~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_eric_stage1.csv",
-stringsAsFactors=FALSE)
+colClasses=c(rep("character,9")))
 nela <- read.csv("~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nela_eric_stage1.csv",
-stringsAsFactors=FALSE)
+colClasses=c(rep("character,9")))
 ramu <- read.csv("~/NETELabs_CaseStudies/assembly/ramucirumab_assembly/ramu_eric_stage1.csv",
-stringsAsFactors=FALSE)
+colClasses=c(rep("character,9")))
 suni <- read.csv("~/NETELabs_CaseStudies/assembly/sunitinib_assembly/suni_eric_stage1.csv",
-stringsAsFactors=FALSE)
+colClasses=c(rep("character,9")))
 
 # merge with pub_out to get corresponding SIDs
 alem_m1 <- merge(alem[,c(2,8)],pub_out[,1:2],by.x="id",by.y="PMID",all.x=TRUE)
