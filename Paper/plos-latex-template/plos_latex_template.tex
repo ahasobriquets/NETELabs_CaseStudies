@@ -30,14 +30,14 @@
 %
 % -- FIGURES AND TABLES
 %
-% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%  Please include tables/figure captions directly after the paragraph where they are first cited in the text.
 %
-% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+%   DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
 % - Figures should be uploaded separately from your manuscript file. 
 % - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
 % - Figures containing multiple panels/subfigures must be combined into one image file before submission.
-% For figure citations, please use "Fig" instead of "Figure".
-% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%   For figure citations, please use "Fig" instead of "Figure".
+%   See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
 %
 % Tables should be cell-based and may not contain:
 % - spacing/line breaks within cells to alter layout or alignment
@@ -73,7 +73,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % %
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+\usepackage[top=0.85in,left=2in,footskip=0.75in]{geometry}
 
 % amsmath and amssymb packages, useful for mathematical formulas and symbols
 \usepackage{amsmath,amssymb}
@@ -157,11 +157,11 @@
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{27.023pt}
-\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\lhead{\includegraphics[width=3.0in]{PLOS-submission.eps}}
 \rfoot{\thepage/\pageref{LastPage}}
 \renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
-\fancyheadoffset[L]{2.25in}
-\fancyfootoffset[L]{2.25in}
+\fancyheadoffset[L]{1.25in}
+\fancyfootoffset[L]{1.25in}
 \lfoot{\sf PLOS}
 
 %% Include all macros below
@@ -170,7 +170,6 @@
 \newcommand{\ipsum}{{\bf IPSUM}}
 
 %% END MACROS SECTION
-
 
 \begin{document}
 \vspace*{0.2in}
@@ -190,7 +189,7 @@ Lingtian Wan\textsuperscript{1,\textcurrency},
 Alexander R. Pico\textsuperscript{3},
 %Name5 Surname\textsuperscript{2\ddag},
 %Name6 Surname\textsuperscript{2\ddag},
-George Chacko\textsuperscript{1*},
+ \& George Chacko\textsuperscript{1*}
 %with the Lorem Ipsum Consortium\textsuperscript{\textpilcrow}
 \\
 \bigskip
@@ -230,7 +229,7 @@ George Chacko\textsuperscript{1*},
 % Please keep the abstract below 300 words
 \section*{Abstract}
 
-Scientific advances such as development of a new drug or biological are collaborative and involve the contributions of many scientists.  Data mining and network analysis of public and commercial data sources can be used to describe the set of collaborative activities or `cure networks' that result in new therapeutics. To explore the relationship across cure networks- the extent to which nodes are common across networks, we have conducted case studies of five anti-cancer therapeutics. We have mined data drawn from public and commercial sources, constructed linkages based on unique identifiers, and modeled the data as networks. We have enriched the content of these networks by annotating them with information on awards that supported the research in these networks as well as peer review that preceded these awards. This approach can be extended beyond drug development to study any major scientific advance. Such studies support portfolio analysis and a public understanding of the benefits of research, this methodology can be extended beyond cures to scientific advances in general. [In fact we're talking about the digital transformation of science history scholarship].[These studies help us understand that which came before and leave it in a form that others can use].[cite Jean-Michel Maldame's work]
+Drug discovery and the subsequent availability of new breakthrough therapeutics or `cures' are compelling examples of societal benefit from advances in research. Such advances are invariably collaborative, involving the contributions of many scientists building upon prior theory and experiment. Data mining of public and commercial data sources coupled with analysis of `cure networks' is a scalable digital methodology for assembling and analyzing the scientific history of these advances. The methodology for assembling is extensible beyond cure networks and such studies support (i) efficiency in  exploring  science history (ii) an improved documenting and understanding of collaboration (iii) portfolio analysis, planning and optimization (iv) communication of the societal value of research. In addition, they help make the scientific environment more citizen-accessible. Building upon techniques for single cure networks, we have conducted a case study of five anti-cancer therapeutics for the purpose of exploring the relationship across these networks. We have enriched the content of these networks by annotating them with information on research awards as well as peer review that preceded these awards. Applying retrospective citation discovery, we have identified a core set of publications cited in the networks for all five therapeutics and additional intersections in pairwise interactions between networks.
 
 % Please keep the Author Summary between 150 and 200 words
 % Use first person. PLOS ONE authors please skip this step. 
@@ -239,28 +238,27 @@ Scientific advances such as development of a new drug or biological are collabor
 %Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget porta erat. Morbi consectetur est vel gravida pretium. Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam sapien tellus, commodo id velit id, eleifend volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel, pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor faucibus id. Nunc convallis sodales ante, ut ullamcorper est egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
 
 \linenumbers
-
 % Use "Eq" instead of "Equation" for equation citations.
 \section*{Introduction}
 
-Data mining of public data sources coupled with network analysis allows the assembly and quantitative description of research discoveries that were influential in the development of a breakthrough therapeutic or `cure' \cite {bib1}.  The set of scientific publications, clinical trials, patents, and regulatory approvals, linked to each other by citation or assignment, that documents progress from basic research to a cure is termed a `cure network'. Key assumptions in constructing these networks are that the references found in relevant documents are appropriate citations of new knowledge relevant to a given cure and that a further retrospective round of citation discovery will uncover previous influential discovery (\textit{ibid}). 
+Data mining of public data sources coupled with network analysis allows the assembly and quantitative description of research discoveries that were influential in the development of a breakthrough therapeutic or `cure'.  The set of scientific publications, clinical trials, patents, and regulatory approvals, linked to each other by citation or assignment, that documents progress from basic research to a cure is termed a `cure network' \cite {bib1}. Key assumptions in constructing these networks are that the references found in relevant documents are appropriate citations of new knowledge relevant to a given cure and that a further retrospective round of citation discovery will uncover previous influential discovery (\textit{ibid}). Williams and colleagues have elegantly demonstrated the feasibility of this approach using, as case studies, ivacaftor and ipilimumab, approved for the treatment of cystic fibrosis and melanoma respectively (\textit{vide supra}). These authors observed that `the nature of a cure discovery network is complex and fundamentally collaborative', noting in the case of ivacaftor, that at least 7,067 scientists with 5,666 unique affiliations contributed to ivacaftor-related research over a period greater than 100 years. 
 
-Williams and colleagues have elegantly demonstrated the feasibility of this approach using, as case studies, ivacaftor and ipilimumab, approved for the treatment of cystic fibrosis and melanoma respectively (\textit{vide supra}). These authors observed that `the nature of a cure discovery network is complex and fundamentally collaborative', noting in the case of ivacaftor, that at least 7,067 scientists with 5,666 unique affiliations contributed to ivacaftor-related research over a period greater than 100 years. Such studies provide evidence for the  broad collaborative platform of basic and translational research underlying major scientific advances such as cures for diseases, support strategic communications to oversight bodies, and communication of the societal value of research \cite {bib2}. 
+Such studies provide evidence for the broad collaborative platform of basic and translational research underlying major scientific advances such as cures for diseases, support strategic communications to oversight bodies, and communication of the societal value of research\cite {bib2,bib3}. Extending this digital methodology to study additional cures as well as significant research advances in general is a logical next step. Ascertaining the nature of the interactions, if any, between networks, is also of considerable interest since it would support an understanding of collaboration across networks as well as common features of science networks.  
 
-Extending the methodology to study additional cures as well as other significant research advances is a logical next step. Ascertaining the nature of the interactions, if any, between networks, is also of considerable interest since it would support an understanding of common features of science networks as well as research events that have been influential across multiple networks. 
+To address these questions, we have conducted case studies of a cluster of five FDA-approved therapeutics for cancer. We have extended the original approach to (i) include a data from a commercially available bibliographic database with disambiguated author identifiers (ii) modified the original data mining methods and network metrics (iii) added new node types to include grants and peer review data (iv) refactored the network analysis code of Williams et al. for better performance. (v) mapped publications and authors across all five networks. 
 
-To address these questions, we have conducted case studies of a cluster of five FDA-approved therapeutics for cancer. We have extended the original approach to (i) include a data from a commercially available bibliographic database with disambiguated author identifiers (ii) modified the original data mining methods and network metrics (iii) added new node types to include grants and peer review data (iv) refactored the network analysis code of Williams et al. for better performance. (v) mapped publications and authors across all five networks. We present the results of these case studies as a step towards mapping the universe of FDA-approved drugs and biologicals.  
+We present the results of these case studies as a step towards mapping the universe of FDA-approved drugs and biologicals. Beyond drug discovery and cures, however, this simple digital methodology can be used to support efficient explorations of science history, gain an understanding of collaboration across domains, enrich portfolio analysis, planning and optimization, enable communications of the societal value of research, and help make the scientific environment more citizen-accessible. 
 
+\section*{Materials and Methods} 
 % Place tables after the first paragraph in which they are cited.
+A set of five anti-cancer therapeutics, three drugs and two biologicals, approved for use in humans by the Food and Drug Administration was selected for this study (Table 1). Imatinib and Sunitinib are tyrosine kinase inhibitors, Nelarabine is a nucleoside analog, and Ramucirumab and Alemtuzumab are humanized antibodies that target cell surface receptors. 
+ For each of these therapeutics, a set of relevant scientific publications was constructed as in Williams et al.\cite{bib1} but with specific modifications detailed below. An allowance of 2 months was made for `publication lag' when assembling referenced material. For example, if a therapeutic was approved on Jan 1, 2017, documents published  on or before March 31, 2017 were included. For each of the five therapeutics, a first-generation list of PubMed IDs (citing\_pmid) was harvested from the five different data sources (below).  
 \begin{table}[!ht]
-\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+%\begin{adjustwidth}{-0.5in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
 \centering
-\caption{
-{\bf Case Studies of Five Anti-Cancer Agents}}
-\vspace{1.5 mm}
+\scalebox{0.9}{
 \begin{tabular}{|l+l|l|l|l|l|l|l|}
 \hline
-
 %\multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \thickhline
 Therapeutic & FDA Approval Date & Unique Identifier & US Patent & Publication Date  \\ \hline
 $Alemtuzumab$ & May 2001 & BLA: 103948 & US5846534 & Dec 1998\\ \hline
@@ -268,66 +266,50 @@ $Imatinib$ & May 2001 & NDA: 021335 & US5521184 &  May 1996 \\ \hline
 $Nelarabine$ & Oct 2005 & NDA: 021877 & US5424295 & Jun 1995  \\ \hline
 $Ramucirumab$ & Apr 2014 & BLA: 125477 & US7498414 & Mar 2009  \\ \hline
 $Sunitinib$ & Jan 2006  & NDA: 021938  & US6573293 & Jun 2003 \\ \hline
-\end{tabular}
-\vspace{1.5 mm}
-\begin{flushleft} Five anti-cancer therapeutics, with FDA approval dates ranging from 2001 to 2014, were selected as case studies. The active ingredient for each of these five therapeutics is listed in column 1. While multiple patents are typically associated with a drug or biological, the single US patent number displayed represents the primary invention that preceded approval of the therapeutic. The publication date for each patent is listed in the last column. 
-\end{flushleft}
+\end{tabular}}
+\vspace{2 mm}
+\caption{
+{\bf Case Studies of Five Anti-Cancer Agents} Five anti-cancer therapeutics, with FDA approval dates ranging from 2001 to 2014, were selected as case studies. The active ingredient for each of these five therapeutics is listed in column 1. While multiple patents are typically associated with a drug or biological, the single US patent number displayed represents the primary invention that preceded approval of the therapeutic. The publication date for each patent is listed in the last column.}
+%\begin{flushleft}  
+%\end{flushleft}
 \label{table1}
-\end{adjustwidth}
+%\end{adjustwidth}
 \end{table}
 
-\section*{Materials and Methods}
+\textbf{Clinical trials} The national clinical trials database (clinicaltrials.gov) was searched for clinical trials of the five therapeutics that completed on or the data of FDA approval. Both cited references and publications from these clinical trials were collected if they were published within the approval date plus two months period. PubMed was also searched with the unique identifier (NCT number) of any clinical trials that were identified to capture publications associated with the clinical trials that were not displayed in clinical trials.gov. To capture clinical trials publications that are not available in clinicaltrials.gov, PubMed was searched using the therapeutic name as keyword, publication type as ``clinical trial'', and an appropriate date restriction as in searches of clinicaltrials.gov. For example, the search term (((``alemtuzumab"[Supplementary Concept] OR ``alemtuzumab"[All Fields]) OR (``alemtuzumab"[Supplementary Concept] OR ``alemtuzumab"[All Fields] OR ``campath"[All Fields])) AND (``1900/0101"[PDAT] : ``2001/07/31''[PDAT])) AND ``clinical trial"[Publication Type] was used to identify publications of clinical trials for Alemtuzumab.
 
-A set of five anti-cancer therapeutics, three drugs and two biologicals, approved for use in humans between 2001 and 2014, were chosen for this study (Table 1). Imatinib and Sunitinib are tyrosine kinase inhibitors, Nelarabine is a nucleoside analog, and Ramucirumab and Alemtuzumab are humanized antibodies that target cell surface receptors. 
+\textbf{FDA documents} The drugs@fda website\cite{bib6} was searched for each of the five therapeutics and cited references in the medical review document were manually extracted and matched to pmids. FDA Approval Summaries, articles published in journals by FDA staff, were available for all five therapeutics and contain cited references. If the published date of a citation exceeded the approval date plus two months, the publication was not included.
 
+\textbf{Patents} For each therapeutic a single patent was identified that best represented the most relevant invention to the therapeutic at hand. Identification of this patent was performed using multiple web sources. The US patent number was then used to identify the patent and the non-patent citation list from Google Patents \cite{bib8} was manually processed by searching PubMed for appropriate pmids. While we developed a citation matching tool for non-patent literature for this purpose, the precision and recall rates from manual searches was far higher and were used to generate the data in this study.
 
-For each of these therapeutics, a set of relevant citations was constructed based on the assumptions articulated by Williams et al. but with specific modifications detailed below. An allowance of 2 months was also made for `publication lag' when assembling referenced material. For example, if a therapeutic was approved on Jan 1, 2017, documents published  on or before March 31, 2017 were included. A first generation of citations was created as a list of PubMed IDs (pmids) harvested from seven different data sources (below).  
-\begin {itemize}
-\item Clinical trials. The national clinical trials database (clinicaltrials.gov) was searched for clinical trials of the five therapeutics that completed on or the data of FDA approval. Both cited references and publications from these clinical trials were collected if they were published within the approval date plus two months period. PubMed was also searched with the unique identifier (NCT number) of any clinical trials that were identified to capture publications associated with the clinical trials that were not displayed in clinical trials.gov. To capture clinical trials publications that are not available in clinicaltrials.gov, PubMed was searched using the therapeutic name as keyword, publication type as "clinical trial", and an appropriate date restriction as in searches of clinicaltrials.gov. For example, the search term ((("alemtuzumab"[Supplementary Concept] OR "alemtuzumab"[All Fields]) OR ("alemtuzumab"[Supplementary Concept] OR "alemtuzumab"[All Fields] OR "campath"[All Fields])) AND ("1900/0101"[PDAT] : "2001/07/31"[PDAT])) AND "clinical trial"[Publication Type] was used to identify publications typed as clinical trials for Alemtuzumab that were published on or before July 31, 2001.
+\textbf{Post-approval literature reviews} Review articles published after a therapeutic's approval by the FDA are independent assessments of the the development of a therapeutic. Accordingly, PubMed was searched for review articles of a therapeutic that were published between the date of FDA approval and one year following the date of approval and cited references in these reviews were extracted using PubMed and Scopus.
 
-\item Regulatory documents. drugs@fda (https://www.accessdata.fda.gov/scripts/cder/daf/) was searched for each of the five therapeutics and cited references in the medical review of the approval process were manually extracted and matched to pmids.
+\textbf{Pre-approval literature searches} Literature searches were performed using PubMed with a date range of 1900/01/01 to two months post-FDA approval. For example, the search term ((alemtuzumab) OR campath) AND (``1900/01/01"[Date - Publication] : ``2001/07/31"[Date - Publication]) was used to retrieve articles of interest relevant to alemtuzumab.
 
-\item FDA Approval Summaries. These articles published in journals by FDA staff (approval summaries were available for all five therapeutics), contain cited references that were extracted using Scopus. approval summaries were available for all five therapeutics. If the published date of a citation exceeded the approval date plus two months, the publication was not included.
-
-\item Patents. For each therapeutic a single patent was identified that best represented the most relevant invention to the therapeutic at hand. Identification of a patent was performed using multiple web sources: PubMed, Google Patents, EspaceNet, and drugbank.ca. The US patent number was used to identify the patent and the non-patent citation list from Google patent was manually processed by searching PubMed for appropriate pmids. While we developed a citation matching tool for non-patent literature, the precision and recall rates from manual searches was far higher and were used to generate the data in this study.
-
-\item Reviews: We treated review articles published after FDA approval  as independent documents describing the development of a therapeutic. Accordingly, PubMed was searched for review articles of a therapeutic that were published between the date of FDA approval and one year following the date of approval. Cited references in these reviews were also extracted as above.
-
-\item Literature searches were also performed using PubMed with a date range of 1900/01/01 to two months post-FDA approval. For example, the search term ((alemtuzumab) OR campath) AND ("1900/01/01"[Date - Publication] : "2001/07/31"[Date - Publication]) was used to retrieve articles of interest relevant to alemtuzumab.
-\end{itemize}
-
-Pmids from the seven different sources above (citing\_pmid) were combined, deduplicated, and matched to Scopus IDs (citing\_eid) using Scopus APIs. These eids were used to extract cited references (cited\_eid), which were then mapped back to pmids (cited\_pmid). The data are summarized in Table 2. Using the Scopus database, this list was mapped to Scopus eids and a second generation of cited references was extracted. These were mapped to pmids First and second generation pmids were both mapped to NIH grants and peer review data using information made publicly available by NIH. The resultant data were modeled as hierarchical networks using a simple dictionary of N node types to unambiguously identify nodes and interactions between them. The networks were analyzed using metrics based on network topology.
+Citing\_pmids from the five different sources above  were combined and deduplicated. Using the Scopus database and its APIs, these citing\_pmids were mapped to ScopusIds (citing\_sid) and a second generation of cited references (cited\_sid) was extracted., These cited\_sids, were in turn, mapped back to pmids (cited\_pmid). Whereas mapping between PubMed and Scopus identifiers at the citing\_pmid and citing\_eid stage resulted in 1\% or less information loss, mapping at the cited\_eid to cited\_pmid resulted in 15-20 \% information loss. Accordingly the Scopus data  was used as the backbone of the publication component of the network and cited\_pmid was treated as an annotation layer.  These observations are summarized in Table 2 and include the count of null values when mapping from citing\_sid to cited\_sid.
 
 \begin{table}[!ht]
-\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+%\begin{adjustwidth}{-0.5in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
 \centering
-\caption{
-{\bf Mapping Publications}}
-\vspace{1.5 mm}
-\begin{tabular}{|l+l|l|l|l|l|l|l|}
+\scalebox{0.9}{\begin{tabular}{|l+l|l|l|l|l|l|l|}
 \hline
 %\multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \thickhline
 Therapeutic & citing\_pmid count & citing\_eid count & cited\_eid count  & cited\_pmid count  \\ \hline
-$Alemtuzumab$ & 599 & 587 & 8840 & 7071\\ \hline
-$Imatinib$ & 1380 & 1373 & 27326 &  23340 \\ \hline
-$Nelarabine$ & 104 & 104 & 2476 & 1990  \\ \hline
-$Ramucirumab$ & 1820 & 1804 & 48587 & 40973  \\ \hline
-$Sunitinib$ & 1512  & 1509  & 33895 & 28661 \\ \hline
-\end{tabular}
-\vspace{1.5 mm}
-\begin{flushleft} Five anti-cancer therapeutics, with FDA approval dates ranging from 2001 to 2014, were selected as case studies. The active ingredient for each of these five therapeutics is listed in column 1. While multiple patents are often associated with a drug or biological, the single US patent number displayed represents the primary invention that preceded approval of the therapeutic. The publication date for each patent is listed in the last column. 
-\end{flushleft}
-\label{table1}
-\end{adjustwidth}
+$Alemtuzumab$ & 599 & 587 (1\%) & 8840 (2\%) & 7071(20\%)\\ \hline
+$Imatinib$ & 1380 & 1373(1\%) & 27326(1\%) &  23340(17\%) \\ \hline
+$Nelarabine$ & 104 & 104(0\%) & 2476(1\%) & 1990(20\%)  \\ \hline
+$Ramucirumab$ & 1820 & 1804(1\%) & 48587(0\%) & 40973(19\%)  \\ \hline
+$Sunitinib$ & 1512  & 1509(0\%)  & 33895(0\%) & 28661(15\%) \\ \hline
+\end{tabular}}
+\vspace{2.5 mm}
+\caption{{\bf Citation Counts and Mapping Between Bibliographic Databases} Five anti-cancer therapeutics were selected as case studies. A foundational set of references (citing\_pmid) was assembled for each therapeutic from patents, clinical trials, regulatory documents, and the scientific literature. Citing\_pmids were mapped to Scopus identifiers (citing\_eid), which were used, in turn, to retrieve literature cited by this foundational set (cited\_eid). Cited\_eids were mapped back to PubMed identifiers (cited\_pmid).The number of  identifiers at each stage of the mapping process is shown along with percentage loss (in parentheses) when mapping across PubMed and Scopus or due to null values in the cited\_sid field} 
+\label{table2}
+%\end{adjustwidth}
 \end{table}
 
-Available awards (projects) and link tables publications up to 2016 were downloaded from NIH ExPORTER and used to link publications to NIH awards and study sections where grant applications were reviewed for scientific merit before an award was made. The assembled data were modeled as a network for each therapeutic and stored as node lists and edge lists. 
-exporter
+Citing and cited pmids were both mapped to NIH grants and peer review panels using information made publicly available by NIH through NIH ExPORTER. Since Special Emphasis Panels vary in scientific interests from year to year, we restricted our mapping to chartered study sections, which have defined scientific interests and relatively stable reviewer membership. The resultant data were modeled as hierarchical networks and analyzed using metrics based on network topology. We calculated the propagated in-degree rank (PIR) metric of Williams \cite {bib1}. PIR represents the sum of weighted citation scores for all articles in a network that can be attributed to an author. In addition to computing PIR for all authors in each network, we also combined the citation data for all five networks and computed a globalPIR score, which was normalized to the sum of PIR scores within each network.
 
-For these data, we calculated the propagated in-degree rank (PIR) and ratio of basic rankings (RBR) metrics of Williams \cite {bib1}  with some modifications to the RBR as follows. The original RBR was defined as the ratio of the number of publications in network to the number of publications in a background dataset for an author. The background dataset was constructed by keyword searches of PubMed. However, a potential weakness of the keyword based approach is that keywords do not effectively capture the field or the total ouput of an author even if multiple background samples are taken. We created two new variants, nRBR and dRBR. nRBR uses all publications in our set of five therapeutics as background. dRBR takes advantage of the Scopus author\_id to capture the total output of an author and use it as background. 
-
-Citation data for all five networks were combined and a globalPIR score was calculated. The globalPIR score was normalized to the sum of PIR scores within each network.  
-
+We also calculated the RBR metric of Williams et al. (\textit{ibid}) with some modifications. The RBR metric is intended to represent the fraction of a researcher's output that is in a network and is defined as the ratio of the number of publications in network to the number of publications in a background dataset for an author. In its original specification, the background dataset for RBR was constructed by keyword searches of PubMed. A potential weakness of this keyword based approach is that keywords do not effectively capture the field or the total output of an author even if multiple background samples are taken. Therefore, we created two new variants of the RBR; network RBR (nRBR) and document-based RBR (dRBR). nRBR uses all publications in our set of five therapeutics as background and dRBR takes advantage of the Scopus author\_id to capture the total output of an author and use it as background. Thus, nRBR and dRBR normalize a researcher's in-network contributions to backgrounds based on total network and total researcher productivity respectively.
 
 \subsection*{Etiam eget sapien nibh.}
 
@@ -343,6 +325,94 @@ Figure caption text here, please use this space for the figure panel description
 
 % Results and Discussion can be combined.
 \section*{Results and Discussion}
+\subsection*{Network Features}
+\subsection*{Intersection Across Networks} this is a 
+\subsection*{Supporting awards and peer-review}
+\subsection*{Future Directions}
+
+\begin{table}[!ht]
+%\begin{adjustwidth}{-0.51in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+\centering
+\vspace{2.5 mm}
+\scalebox{0.8}{
+\begin{tabular}{|l| l| l| l| l| l| l| l|}
+\hline
+alem(A) & imat(I) & nela(N) & ramu(R) & suni(S) & combination  & intersection\_count &no\_of\_drugs\\ 
+ \hline
+%\multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \thickhline
+X & X & X & X & X & AINRS &  \textbf{14} & 5 \\ 
+\hline
+X & X &  & X & X & AIRS & \textbf{107} & 4 \\ 
+\hline
+X & X & X & X &  & AINR &  28 & 4 \\ 
+\hline
+X & X & X &  & X & AINS &  25 & 4 \\ 
+\hline
+& X & X & X & X & INRS &  22 & 4 \\ 
+\hline
+X &  & X & X & X & ANRS &  16 & 4 \\ 
+\hline 
+& X &  & X & X & IRS & \textbf{1762} & 3 \\ 
+\hline
+X & X &  & X &  & AIR & 231 & 3 \\ 
+\hline
+X & X &  &  & X & AIS & 211 & 3 \\ 
+\hline
+X &  &  & X & X & ARS & 156 & 3 \\ 
+\hline
+X & X & X &  &  & AIN &  81 & 3 \\ 
+\hline
+X &  & X & X &  & ANR &  56 & 3 \\ 
+\hline 
+& X & X &  & X & INS &  49 & 3 \\ 
+\hline
+& X & X & X &  & INR &  44 & 3 \\ 
+\hline
+ &  & X & X & X & NRS &  40 & 3 \\ 
+\hline
+X &  & X &  & X & ANS &  32 & 3 \\ 
+\hline 
+&  &  & X & X & RS & \textbf{7442} & 2 \\ 
+\hline
+& X &  &  & X & IS & 5415 & 2 \\ 
+\hline
+& X &  & X &  & IR & 2507 & 2 \\ 
+\hline
+X & X &  &  &  & AI & 1240 & 2 \\ 
+\hline
+X &  &  & X &  & AR & 448 & 2 \\ 
+\hline
+X &  &  &  & X & AS & 359 & 2 \\ 
+\hline
+X &  & X &  &  & AN & 334 & 2 \\ 
+\hline 
+& X & X &  &  & IN & 232 & 2 \\ 
+\hline
+&  & X & X &  & NR & 115 & 2 \\ 
+\hline 
+ &  & X &  & X & NS & 111 & 2 \\ 
+\hline
+&  &  & X &  & R & \textbf{49006} & 1 \\ 
+\hline 
+&  &  &  & X & S & 34257 & 1 \\ 
+\hline 
+& X &  &  &  & I & 27706 & 1 \\ 
+\hline
+X &  &  &  &  & A & 8978 & 1 \\ 
+\hline
+&  & X &  &  & N & 2498 & 1 \\ 
+\hline
+\end{tabular}}
+\vspace{2.5 mm}
+\caption{
+{\bf Intersecting Publications Across Networks} Intersections were calculated for the set of publications associated with each network. Both citing and cited references were included in each set and  Scopus identifiers were used to to minimize information loss (Table 2). Intersection counts are shown for all possible combinations of the five therapeutics. The largest intersection count in each combination group is shown in boldface. Therapeutic names are abbreviated as follows: Alemtuzumab as alem(A), Imatinib as imat(I), Nelarabine as nela(N), Ramucirumab as ramu(R), and Sunitinib as suni(S). }
+
+%\begin{flushleft} Intersections were calculated for the set of publications associated with each network. Both citing and cited references were included in each set and  Scopus Ids were used as identifiers to minimize loss of data when mapping back to pmids. Intersection counts are shown for all possible combinations of the five therapeutics. The largest intersection count in each combination group is shown in boldface.
+%\end{flushleft}
+\label{table3}
+%\end{adjustwidth}
+\end{table}
+
 
 No idea what to say...
 
@@ -454,6 +524,20 @@ Maldame, J.
 \newblock {{T}he Importance Of The History Of Science In Intellectual Formation}
 \newblock Scripta Varia 2002 104:237-248
 
+\bibitem{bib6}
+Federal Drug Administration.
+\newblock {{D}rugs@FDA: FDA Approved Drug Products}
+\newblock https://www.accessdata.fda.gov/scripts/cder/daf/
+
+\bibitem{bib7}
+National Institutes of Health.
+\newblock {{N}IH ExPORTER}
+\newblock https://exporter.nih.gov/
+
+\bibitem{bib8}
+Google Corporation
+\newblock {{G}oogle Patents}
+\newblock https://patents.google.com/
 
 \bibitem{bibn}
 Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM.
@@ -461,10 +545,7 @@ Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM.
 infection through a transposon insertion followed by a {D}uplication}.
 \newblock PLoS Genet. 2011 Oct;7(10):e1002337.
 
-
 \end{thebibliography}
-
-
 
 \end{document}
 
