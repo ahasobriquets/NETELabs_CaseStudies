@@ -1,0 +1,100 @@
+id	pmid	given_author	first_author	title	source	year
+	1331337	Akbasak,	Akbasak A	Oncogenes: cause or consequence in the development of glial tumors.	J Neurol Sci	1992
+	10209510	Andoh,	Andoh A	Rapid intestinal ischaemia-reperfusion injury is suppressed in genetically mast cell-deficient Ws/Ws rats.	Clin Exp Immunol	1999
+	7579408	Beck,	Beck D	Expression of stem cell factor and its receptor by human neuroblastoma cells and tumors.	Blood	1995
+	7620167	Bedi,	Bedi A	BCR-ABL-mediated inhibition of apoptosis with delay of G2/M transition after DNA damage: a mechanism of resistance to multiple anticancer agents.	Blood	1995
+	9207920	Bellone,		Growth Stimulation Of Colorectal Carcinoma Cells Via The c-Kit Receptor Is Inhibited By TGF-beta1,		
+	1375870	Berdel,	Berdel WE	Recombinant human stem cell factor stimulates growth of a human glioblastoma cell line expressing c-kit protooncogene.	Cancer Res	1992
+	10655061	Blume-Jensen,	Blume-Jensen P	Kit/stem cell factor receptor-induced activation of phosphatidylinositol 3'-kinase is essential for male fertility.	Nat Genet	2000
+	8609154	Bokemeyer,	Bokemeyer C	Expression of stem-cell factor and its receptor c-kit protein in normal testicular tissue and malignant germ-cell tumours.	J Cancer Res Clin Oncol	1996
+	14693160	Broudy,		Stem Cell Factor and Hematopoiesis,		
+	10688886	Carpino,		p62<SUP>dok: </SUP>A Constitutively Tyrosine-Phosphorylated, GAP-Associated Protein In Chronic Myelogenous Leukemia Progenitor Cells,		
+	8876560	Castells,	Castells MC	The presence of membrane-bound stem cell factor on highly immature nonmetachromatic mast cells in the peripheral blood of a patient with aggressive systemic mastocytosis.	J Allergy Clin Immunol	1996
+	25275588	Chao,		Growth Factor Signaling: Where Is The Specificity?		
+	24054722	Cohen,		Expression Of Stem Cell Factor And c-Kit In Human Neuroblastoma,		
+	1378071	Columbo,	Columbo M	The human recombinant c-kit receptor ligand, rhSCF, induces mediator release from human cutaneous mast cells and enhances IgE-dependent mediator release from both skin mast cells and peripheral blood basophils.	J Immunol	1992
+	28266165	Costa,		The Cells Of The Allergic Response,		
+	9814978	Dastych,		Stem Cell Factor Induces Mast Cell Adhesion To Fibronectin,		
+	1360236	Dickson,		Tyrosine Kinase Receptor-Nuclear Protooncogene Interactions In Breast Cancer,		
+		Driancourt,		Roles Of Kit and Kit Ligand In Ovarian Function,		
+	2537532	Dyson,	Dyson N	The human papilloma virus-16 E7 oncoprotein is able to bind to the retinoblastoma gene product.	Science	1989
+	10706768	Escribano,		Expression of the C-Kit (CD117) Molecule In Normal And Malignant Hematopoiesis,		
+	9935121	Feng,	Feng HL	Decreased expression of the c-kit receptor is associated with increased apoptosis in subfertile human testes.	Fertil Steril	1999
+	9120017	Finotto,		Glucocorticoids Decrease Tissue Mast Cell Number By Reducing The Production Of the C-Kit Ligand, Stem cell Factor, By Resident Cells,		
+		Furitsu,		Identification Of Mutations In The Code Sequence Of The Prot-Oncogene C-Kit in A Human Mast Cell Leukemia Cell Line Causing Ligand-Independent Activiation of C-Kit Product,		
+	9680375	Furuta,	Furuta GT	Stem cell factor influences mast cell mediator release in response to eosinophil-derived granule major basic protein.	Blood	1998
+	10365812	Gaca,	Gaça MD	Human and rat hepatic stellate cells produce stem cell factor: a possible mechanism for mast cell recruitment in liver fibrosis.	J Hepatol	1999
+	9149712	Golkar,	Golkar L	Mastocytosis.	Lancet	1997
+		Hallek,		Interaction Of The Receptor Tyrosine Kinase p145<SUP>c-kit </SUP>With the p210<SUP>bcr/abl </SUP>Kinase In Myeloid Cells,		
+	9440029	Hamel,	Hamel W	The road less travelled: c-kit and stem cell factor.	J Neurooncol	1997
+	19667936	Hassan,		Stem Cell Factor As A Survival And Growth Factor In Human Normal And Malignant Hematopoiesis,		
+	1722571	Hibi,	Hibi K	Coexpression of the stem cell factor and the c-kit genes in small-cell lung cancer.	Oncogene	1991
+	26722383	Hirota,		Gain-Of-Function Mutations Of C-Kit In Human Gastrointestinal Stromal Tumors,		
+	9257003	Holgate,	Holgate ST	Asthma: a dynamic disease of inflammation and repair.	Ciba Found Symp	1997
+	7508684	Iemura,	Iemura A	The c-kit ligand, stem cell factor, promotes mast cell survival by suppressing apoptosis.	Am J Pathol	1994
+	7514496	Inoue,	Inoue M	Coexpression of the c-kit receptor and the stem cell factor in gynecological tumors.	Cancer Res	1994
+	9040218	Isozaki,	Isozaki K	Deficiency of c-kit+ cells in patients with a myopathic form of chronic idiopathic intestinal pseudo-obstruction.	Am J Gastroenterol	1997
+	8551387	Izquierdo,	Izquierdo MA	Differential expression of the c-kit proto-oncogene in germ cell tumours.	J Pathol	1995
+	7520755	Jellinek,	Jellinek D	Inhibition of receptor binding by high-affinity RNA ligands to vascular endothelial growth factor.	Biochemistry	1994
+	19506164	Jones,		Biology And Treatment Of Chronic Myeloid Leukemia,		
+	8248162	Kendall,	Kendall RL	Inhibition of vascular endothelial cell growth factor activity by an endogenously encoded soluble receptor.	Proc Natl Acad Sci U S A	1993
+	20406854	Kim,		Inhibition Of Vascular Endothelial Growth Factor-Induced Angiogenesis Suppresses Tumour Growth In Vivo,		
+	7545020	Kinashi,		Steel Factor And C-Kit Regulate Cell-Matrix Adhesion,		
+	1370939	Kinsella,	Kinsella JL	Protein kinase C regulates endothelial cell tube formation on basement membrane matrix, Matrigel.	Exp Cell Res	1992
+	10716931	Kissel,	Kissel H	Point mutation in kit receptor tyrosine kinase reveals essential roles for kit signaling in spermatogenesis and oogenesis without affecting other kit responses.	EMBO J	2000
+	7542102	Kitamura,	Kitamura Y	Regulation of development, survival and neoplastic growth of mast cells through the c-kit receptor.	Int Arch Allergy Immunol	1995
+	15728446	Kohler,		Continuous Cultures Of Fused Cells Secreting Antibody of Predefined Speficity,		
+	7530826	Kondoh,	Kondoh G	An in vivo model for receptor tyrosine kinase autocrine/paracrine activation: auto-stimulated KIT receptor acts as a tumor promoting factor in papillomavirus-induced tumorigenesis.	Oncogene	1995
+	7966705	Kondoh,	Kondoh G	Establishment and further characterization of a line of transgenic mice showing testicular tumorigenesis at 100% incidence.	J Urol	1994
+	1851881	Kondoh,	Kondoh G	Very high incidence of germ cell tumorigenesis (seminomagenesis) in human papillomavirus type 16 transgenic mice.	J Virol	1991
+	1401070	Korc,	Korc M	Overexpression of the epidermal growth factor receptor in human pancreatic cancer is associated with concomitant increases in the levels of epidermal growth factor and transforming growth factor alpha.	J Clin Invest	1992
+	7689190	Kristt,	Kristt DA	Receptor tyrosine kinase expression in astrocytic lesions: similar features in gliosis and glioma.	Neurosurgery	1993
+		Krueger,		A Human Transmembrane Protein-Tyrosine-Phosphatase, PTPzeta, Is Expressed In Brain And Has An N-Terminal Receptor Domain Homologous To Carbonic Anhyrases,		
+	1306311	Kumabe,		Amplification Of alpha-Platelet-Derived Growth Factor Receptor Gene Lacking An Exon Coding For A Portion Of The Extracellular Region In A Primary Brain Tumor Of Glial Origin,		
+	9584135	Kunisada,	Kunisada T	Murine cutaneous mastocytosis and epidermal melanocytosis induced by keratinocyte expression of transgenic stem cell factor.	J Exp Med	1998
+	8519688	Lahm,	Lahm H	Interleukin 4 down-regulates expression of c-kit and autocrine stem cell factor in human colorectal carcinoma cells.	Cell Growth Differ	1995
+	1324943	Lee,		Intracellular Of Membrane-Anchored V-Sis Protein Abrogates Autocrine Signal Transduction,		
+	9317119	Lee,	Lee JW	HLA-DR-triggered inhibition of hemopoiesis involves Fas/Fas ligand interactions and is prevented by c-kit ligand.	J Immunol	1997
+	8813120	Li,	Li Q	Abrogation of c-kit/Steel factor-dependent tumorigenesis by kinase defective mutants of the c-kit receptor: c-kit kinase defective mutants as candidate tools for cancer gene therapy.	Cancer Res	1996
+	9004081	London,	London CA	Expression of stem cell factor receptor (c-kit) by the malignant mast cells from spontaneous canine mast cell tumours.	J Comp Pathol	1996
+		Longley,		Chymase Cleavage Of Stem Cell Factor Yields A Bioactive, Soluble Product,		
+	8589724	Longley,	Longley BJ	Somatic c-KIT activating mutation in urticaria pigmentosa and aggressive mastocytosis: establishment of clonality in a human mast cell neoplasm.	Nat Genet	1996
+	9203987	Loveland,	Loveland KL	Stem cell factor and c-kit in the mammalian testis: lessons originating from Mother Nature's gene knockouts.	J Endocrinol	1997
+	8621935	Lukacs,	Lukacs NW	Stem cell factor (c-kit ligand) influences eosinophil recruitment and histamine levels in allergic airway inflammation.	J Immunol	1996
+	9454740	Lyman,	Lyman SD	c-kit ligand and Flt3 ligand: stem/progenitor cell factors with overlapping yet distinct activities.	Blood	1998
+	9989791	Ma,	Ma Y	Clustering of activating mutations in c-KIT's juxtamembrane coding region in canine mast cell neoplasms.	J Invest Dermatol	1999
+	10224103	Ma,	Ma Y	Inhibition of spontaneous receptor phosphorylation by residues in a putative alpha-helix in the KIT intracellular juxtamembrane region.	J Biol Chem	1999
+		Mariani,		Inhibition of Angiogenesis By FCE 26806, A Potent Tyrosine Kinase Inhibitor,		
+	10582791	Mauduit,	Mauduit C	Stem cell factor/c-kit system in spermatogenesis.	Hum Reprod Update	1999
+	14510988	Mekori,		The Role Of C-Kit And Its Ligand, Stem Cell Factor, In Mast Cell Apoptosis,		
+	7519644	Mekori,	Mekori YA	Transforming growth factor-beta prevents stem cell factor-mediated rescue of mast cells from apoptosis after IL-3 deprivation.	J Immunol	1994
+	9212861	Meltzer,	Meltzer EO	The pharmacological basis for the treatment of perennial allergic rhinitis and non-allergic rhinitis with topical corticosteroids.	Allergy	1997
+	9600979	Metcalf,	Metcalf D	Lineage commitment in the progeny of murine hematopoietic preprogenitor cells: influence of thrombopoietin and interleukin 5.	Proc Natl Acad Sci U S A	1998
+	16799601	Metcalfe,	Metcalfe DD	Classification and diagnosis of mastocytosis: current status.	J Invest Dermatol	1991
+	28254862	Metcalfe,		Mast Cells,		
+	9562446	Murty,	Murty VV	A genetic perspective of male germ cell tumors.	Semin Oncol	1998
+	20819468	Naclerio,		Rhinitis And Inhalant Allergens,		
+	9519779	Nagata,	Nagata H	Elevated expression of the proto-oncogene c-kit in patients with mastocytosis.	Leukemia	1998
+	14973117	Natali,		Progression Of Human Cutaneous Melanoma Is Associated With Loss Of Expression Of C-Kit Proto-Oncogene Receptor,		
+	10769236	Ohta,	Ohta H	Regulation of proliferation and differentiation in spermatogonial stem cells: the role of c-kit and its ligand SCF.	Development	2000
+	9521081	Okayama,		Activation Of Eosinophils With Cytokines Produced By Lung Mast Cells,		
+	9521081	Okayama,	Okayama Y	Human lung mast cells are enriched in the capacity to produce granulocyte-macrophage colony-stimulating factor in response to IgE-dependent stimulation.	Eur J Immunol	1998
+	10993277	Pardo,	Pardo J	Mast cells in chronic rejection of human renal allografts.	Virchows Arch	2000
+	11325522	Parrott,	Nilsson E	Basic fibroblast growth factor induces primordial follicle development and initiates folliculogenesis.	Mol Cell Endocrinol	2001
+	9168310	Pignon,	Pignon JM	C-kit mutations and mast cell disorders. A model of activating mutations of growth factor receptors.	Hematol Cell Ther	1997
+	2456920	Qiu,		Primary Structure Of C-Kit: Relationship With The CSF-1/PDGF Receptor Kinase Family-Oncogenic Activation of V-Kit Involves Deletion of Extracellular Domain And C Terminus,		
+		Rajpert-De		Expression Of The C-Kit Protein Product In Carcinoma-In-Situ And Invasive Testicular Germ Cell Tumours,		
+	9516139	Ricotti,	Ricotti E	c-kit is expressed in soft tissue sarcoma of neuroectodermic origin and its ligand prevents apoptosis of neoplastic cells.	Blood	1998
+		Ryan,		Rapid Communication, Role For The Stem Cell Factor/Kit Complex In Schwann Cell Neoplasia And Mast Cell Proliferation Associated With Neurofibromatosis,		
+	26306008	Saito,		Molecular Characterization of Protein Tyrosine Phosphatases,		
+	9935121	Sandlow,		Expression Of C-Kit And Its Ligand, Stem Cell Factor, In Normal And Subfertile Human Testicular Tissue,		
+	9933129	Sawada,		Role Of Cytokines In Leukemic Type Growth of Myelodysplastic CD34<SUP>+</SUP> Cells,		
+	9596651	Sawai,	Sawai N	Thrombopoietin enhances the production of myeloid cells, but not megakaryocytes, in juvenile chronic myelogenous leukemia.	Blood	1998
+	2175676	Scheffner,	Scheffner M	The E6 oncoprotein encoded by human papillomavirus types 16 and 18 promotes the degradation of p53.	Cell	1990
+	26864631	Schlessinger,		Growth Factor Signaling By Receptor Tyrosine Kinases,		
+		Schuchter,		Successful Treatment of Murine Melanoma With Bryostatin 1<SUP>1</SUP>,		
+	10704463	Secor,	Secor VH	Mast cells are essential for early onset and severe disease in a murine model of multiple sclerosis.	J Exp Med	2000
+	17486079	Slamon,		Studies of The HER-2/Neu Proto-Oncogene In Human Breast And Ovarian Cancer,		
+	9657760	Sperling,		Expression Of The Stem Cell Factor Receptor C-Kit (CD117) In Acute Leukemias,		
+	7537428	Stanulla,	Stanulla M	Coexpression of stem cell factor and its receptor c-Kit in human malignant glioma cell lines.	Acta Neuropathol	1995
+	7529338	Strohmeyer,	Strohmeyer T	Expression of the c-kit proto-oncogene and its ligand stem cell factor (SCF) in normal and malignant human testicular tissue.	J Urol	1995

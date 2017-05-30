@@ -1,0 +1,625 @@
+PMID- 26048277
+OWN - NLM
+STAT- MEDLINE
+DA  - 20150804
+DCOM- 20160518
+LR  - 20150804
+IS  - 1078-0432 (Print)
+IS  - 1078-0432 (Linking)
+VI  - 21
+IP  - 15
+DP  - 2015 Aug 01
+TI  - FDA Approval Summary: Ramucirumab for Gastric Cancer.
+PG  - 3372-6
+LID - 10.1158/1078-0432.CCR-15-0600 [doi]
+AB  - The FDA approved ramucirumab (CYRAMZA; Eli Lilly and Company) for previously
+      treated patients with advanced or metastatic gastric or gastroesophageal junction
+      adenocarcinoma initially as monotherapy (April 21, 2014) and subsequently as
+      combination therapy with paclitaxel (November 5, 2014). In the monotherapy trial,
+      355 patients in the indicated population were randomly allocated (2:1) to receive
+      ramucirumab or placebo, 8 mg/kg intravenously every 2 weeks. In the combination
+      trial, 665 patients were randomly allocated (1:1) to receive ramucirumab or
+      placebo, 8 mg/kg intravenously every 2 weeks, in combination with paclitaxel, 80
+      mg/m(2) on days 1, 8, and 15 of 28-day cycles. Overall survival (OS) was
+      increased in patients who received ramucirumab in both the monotherapy [HR, 0.78;
+      95% confidence interval (CI), 0.60-0.998; log rank P = 0.047] and combination
+      trials (HR, 0.81; 95% CI, 0.68-0.96; P = 0.017). The most common adverse
+      reactions were hypertension and diarrhea in the monotherapy trial and fatigue,
+      neutropenia, diarrhea, and epistaxis in the combination trial. Because of
+      concerns about the robustness of the monotherapy trial results, FDA approved the
+      original application after receiving the results of the combination trial
+      confirming the OS effect. Based on exploratory exposure-response analyses, there
+      is residual uncertainty regarding the optimal dose of ramucirumab.
+CI  - (c)2015 American Association for Cancer Research.
+FAU - Casak, Sandra J
+AU  - Casak SJ
+AD  - Office of Hematology and Oncology Products, Office of New Drugs, U.S. Food and
+      Drug Administration, Silver Spring, Maryland. Sandra.Casak@fda.hhs.gov.
+FAU - Fashoyin-Aje, Ibilola
+AU  - Fashoyin-Aje I
+AD  - Office of Hematology and Oncology Products, Office of New Drugs, U.S. Food and
+      Drug Administration, Silver Spring, Maryland.
+FAU - Lemery, Steven J
+AU  - Lemery SJ
+AD  - Office of Hematology and Oncology Products, Office of New Drugs, U.S. Food and
+      Drug Administration, Silver Spring, Maryland.
+FAU - Zhang, Lillian
+AU  - Zhang L
+AD  - Office of Clinical Pharmacology, U.S. Food and Drug Administration, Silver
+      Spring, Maryland.
+FAU - Jin, Runyan
+AU  - Jin R
+AD  - Office of Clinical Pharmacology, U.S. Food and Drug Administration, Silver
+      Spring, Maryland.
+FAU - Li, Hongshan
+AU  - Li H
+AD  - Office of Clinical Pharmacology, U.S. Food and Drug Administration, Silver
+      Spring, Maryland.
+FAU - Zhao, Liang
+AU  - Zhao L
+AD  - Office of Clinical Pharmacology, U.S. Food and Drug Administration, Silver
+      Spring, Maryland.
+FAU - Zhao, Hong
+AU  - Zhao H
+AD  - Office of Clinical Pharmacology, U.S. Food and Drug Administration, Silver
+      Spring, Maryland.
+FAU - Zhang, Hui
+AU  - Zhang H
+AD  - Office of Biostatistics, Office of Translational Sciences, U.S. Food and Drug
+      Administration, Silver Spring, Maryland.
+FAU - Chen, Huanyu
+AU  - Chen H
+AD  - Office of Biostatistics, Office of Translational Sciences, U.S. Food and Drug
+      Administration, Silver Spring, Maryland.
+FAU - He, Kun
+AU  - He K
+AD  - Office of Biostatistics, Office of Translational Sciences, U.S. Food and Drug
+      Administration, Silver Spring, Maryland.
+FAU - Dougherty, Michele
+AU  - Dougherty M
+AD  - Office of Biotechnology Products, Office of Pharmaceutical Quality, Center for
+      Drug Evaluation and Research, U.S. Food and Drug Administration, Silver Spring,
+      Maryland.
+FAU - Novak, Rachel
+AU  - Novak R
+AD  - Office of Biotechnology Products, Office of Pharmaceutical Quality, Center for
+      Drug Evaluation and Research, U.S. Food and Drug Administration, Silver Spring,
+      Maryland.
+FAU - Kennett, Sarah
+AU  - Kennett S
+AD  - Office of Biotechnology Products, Office of Pharmaceutical Quality, Center for
+      Drug Evaluation and Research, U.S. Food and Drug Administration, Silver Spring,
+      Maryland.
+FAU - Khasar, Sachia
+AU  - Khasar S
+AD  - Office of Hematology and Oncology Products, Office of New Drugs, U.S. Food and
+      Drug Administration, Silver Spring, Maryland.
+FAU - Helms, Whitney
+AU  - Helms W
+AD  - Office of Hematology and Oncology Products, Office of New Drugs, U.S. Food and
+      Drug Administration, Silver Spring, Maryland.
+FAU - Keegan, Patricia
+AU  - Keegan P
+AD  - Office of Hematology and Oncology Products, Office of New Drugs, U.S. Food and
+      Drug Administration, Silver Spring, Maryland.
+FAU - Pazdur, Richard
+AU  - Pazdur R
+AD  - Office of Biostatistics, Office of Translational Sciences, U.S. Food and Drug
+      Administration, Silver Spring, Maryland.
+LA  - eng
+PT  - Clinical Trial
+PT  - Journal Article
+PT  - Randomized Controlled Trial
+DEP - 20150605
+PL  - United States
+TA  - Clin Cancer Res
+JT  - Clinical cancer research : an official journal of the American Association for
+      Cancer Research
+JID - 9502500
+RN  - 0 (Antibodies, Monoclonal)
+RN  - D99YVK4L0X (ramucirumab)
+RN  - P88XT4IS4D (Paclitaxel)
+RN  - Adenocarcinoma Of Esophagus
+SB  - IM
+MH  - Adenocarcinoma/*drug therapy/pathology
+MH  - Adolescent
+MH  - Adult
+MH  - Aged
+MH  - Antibodies, Monoclonal/*administration & dosage/adverse effects
+MH  - Antineoplastic Combined Chemotherapy Protocols/administration & dosage
+MH  - Disease-Free Survival
+MH  - Drug Approval
+MH  - Drug-Related Side Effects and Adverse Reactions/pathology
+MH  - Esophageal Neoplasms/*drug therapy/pathology
+MH  - Female
+MH  - Humans
+MH  - Kaplan-Meier Estimate
+MH  - Male
+MH  - Middle Aged
+MH  - Paclitaxel/*administration & dosage/adverse effects
+MH  - Stomach Neoplasms/*drug therapy/pathology
+EDAT- 2015/06/07 06:00
+MHDA- 2016/05/19 06:00
+CRDT- 2015/06/07 06:00
+PHST- 2015/03/19 [received]
+PHST- 2015/05/19 [accepted]
+AID - 1078-0432.CCR-15-0600 [pii]
+AID - 10.1158/1078-0432.CCR-15-0600 [doi]
+PST - ppublish
+SO  - Clin Cancer Res. 2015 Aug 1;21(15):3372-6. doi: 10.1158/1078-0432.CCR-15-0600.
+      Epub 2015 Jun 5.
+ 
+PMID- 18586926
+OWN - NLM
+STAT- MEDLINE
+DA  - 20080630
+DCOM- 20081029
+LR  - 20141120
+IS  - 1083-7159 (Print)
+IS  - 1083-7159 (Linking)
+VI  - 13
+IP  - 6
+DP  - 2008 Jun
+TI  - FDA drug approval summary: nelarabine (Arranon) for the treatment of T-cell
+      lymphoblastic leukemia/lymphoma.
+PG  - 709-14
+LID - 10.1634/theoncologist.2006-0017 [doi]
+AB  - PURPOSE: To describe the clinical trials leading to U.S. Food and Drug
+      Administration (FDA) approval of nelarabine (Arranon), a new purine analogue, for
+      the treatment of patients with T-cell acute lymphoblastic leukemia (T-ALL) and
+      T-cell lymphoblastic lymphoma (T-LBL) whose disease has not responded to or has
+      relapsed following treatment with at least two chemotherapy regimens.
+      EXPERIMENTAL DESIGN: Two phase II trials, one conducted in pediatric patients and
+      the other in adult patients, were reviewed. Patients were in their first or
+      subsequent relapse and/or were refractory to first-line therapy. The dose and
+      schedule of i.v. nelarabine in the pediatric and adult studies were 650 mg/m2 per
+      day daily for 5 days and 1,500 mg/m2 i.v. on days 1, 3, and 5, respectively.
+      Treatments were repeated every 21 days. Study endpoints were the rates of
+      complete response (CR) and CR with incomplete hematologic or bone marrow recovery
+      (CR*). RESULTS: The pediatric efficacy population consisted of 39 patients who
+      had relapsed after, or had been refractory to, two or more induction regimens. CR
+      to nelarabine treatment was observed in five patients (13%) and CR+CR* was
+      observed in nine patients (23%). The adult efficacy population consisted of 28
+      patients. CR to nelarabine treatment was observed in five patients (18%) and
+      CR+CR* was observed in six patients (21%). Neurologic toxicity was dose limiting
+      for both pediatric and adult patients. Other severe toxicities included
+      hematologic, hepatic, and metabolic laboratory abnormalities in pediatric
+      patients and gastrointestinal and pulmonary toxicities in adults. CONCLUSIONS: On
+      October 28, 2005, the FDA granted accelerated approval for nelarabine for
+      treatment of patients with relapsed or refractory T-ALL/T-LBL after at least two
+      prior regimens. This use is based on the induction of CR. The applicant will
+      conduct postmarketing clinical trials to demonstrate clinical benefit, for
+      example, survival prolongation.
+FAU - Cohen, Martin H
+AU  - Cohen MH
+AD  - Division of Oncology Drug Products, Center for Drug Evaluation and Research, US
+      Food and Drug Administration, Rockville, MD, USA. martin.cohen@fda.hhs.gov
+FAU - Johnson, John R
+AU  - Johnson JR
+FAU - Justice, Robert
+AU  - Justice R
+FAU - Pazdur, Richard
+AU  - Pazdur R
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - Oncologist
+JT  - The oncologist
+JID - 9607837
+RN  - 0 (Arabinonucleosides)
+RN  - 60158CV180 (nelarabine)
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Aged
+MH  - Arabinonucleosides/*therapeutic use
+MH  - Child
+MH  - Child, Preschool
+MH  - Clinical Trials, Phase II as Topic
+MH  - Drug Approval/*legislation & jurisprudence
+MH  - Humans
+MH  - Infant
+MH  - Leukemia-Lymphoma, Adult T-Cell/*drug therapy
+MH  - Middle Aged
+MH  - Precursor T-Cell Lymphoblastic Leukemia-Lymphoma/*drug therapy
+MH  - United States
+MH  - United States Food and Drug Administration
+EDAT- 2008/07/01 09:00
+MHDA- 2008/10/31 09:00
+CRDT- 2008/07/01 09:00
+AID - 13/6/709 [pii]
+AID - 10.1634/theoncologist.2006-0017 [doi]
+PST - ppublish
+SO  - Oncologist. 2008 Jun;13(6):709-14. doi: 10.1634/theoncologist.2006-0017.
+ 
+PMID- 18305062
+OWN - NLM
+STAT- MEDLINE
+DA  - 20080228
+DCOM- 20080515
+LR  - 20131121
+IS  - 1083-7159 (Print)
+IS  - 1083-7159 (Linking)
+VI  - 13
+IP  - 2
+DP  - 2008 Feb
+TI  - FDA drug approval summary: alemtuzumab as single-agent treatment for B-cell
+      chronic lymphocytic leukemia.
+PG  - 167-74
+LID - 10.1634/theoncologist.2007-0218 [doi]
+AB  - On September 19, 2007, the U.S. Food and Drug Administration granted regular
+      approval and expanded labeling for alemtuzumab (Campath); Genzyme Corporation,
+      Cambridge, MA) as single-agent treatment for B-cell chronic lymphocytic leukemia
+      (B-CLL). Alemtuzumab was initially approved in 2001 under accelerated approval
+      regulations. Conversion to regular approval was based on a single study submitted
+      to verify clinical benefit. Efficacy and safety were demonstrated in an
+      open-label, international, multicenter, randomized trial of 297 patients with
+      previously untreated, Rai stage I-IV B-CLL experiencing progression of their
+      disease. Patients were randomized to either alemtuzumab, 30 mg i.v. over 2 hours
+      three times per week on alternate days for a maximum of 12 weeks, or
+      chlorambucil, 40 mg/m(2) orally every 28 days for a maximum of 12 months. The
+      progression-free survival time, the primary study endpoint, was significantly
+      longer in the alemtuzumab arm than in the chlorambucil arm. Both the overall and
+      complete response rates were also significantly higher in the alemtuzumab arm. No
+      differences in survival were observed. There were no new safety signals
+      identified in patients receiving alemtuzumab. The most serious, and sometimes
+      fatal, toxicities of alemtuzumab are cytopenias, infusion reactions, and
+      infections.
+FAU - Demko, Suzanne
+AU  - Demko S
+AD  - P.A.-C., U.S. Food and Drug Administration, Silver Spring, Maryland 20993, USA.
+      suzanne.demko@fda.hhs.gov
+FAU - Summers, Jeffrey
+AU  - Summers J
+FAU - Keegan, Patricia
+AU  - Keegan P
+FAU - Pazdur, Richard
+AU  - Pazdur R
+LA  - eng
+PT  - Journal Article
+PT  - Multicenter Study
+PT  - Randomized Controlled Trial
+PL  - United States
+TA  - Oncologist
+JT  - The oncologist
+JID - 9607837
+RN  - 0 (Antibodies, Monoclonal)
+RN  - 0 (Antibodies, Monoclonal, Humanized)
+RN  - 0 (Antibodies, Neoplasm)
+RN  - 0 (Antineoplastic Agents)
+RN  - 0 (Antineoplastic Agents, Alkylating)
+RN  - 18D0SL7309 (Chlorambucil)
+RN  - 3A189DH42V (alemtuzumab)
+SB  - IM
+MH  - Aged
+MH  - Antibodies, Monoclonal/administration & dosage/adverse effects/*therapeutic use
+MH  - Antibodies, Monoclonal, Humanized
+MH  - Antibodies, Neoplasm/administration & dosage/adverse effects/*therapeutic use
+MH  - Antineoplastic Agents/administration & dosage/adverse effects/*therapeutic use
+MH  - Antineoplastic Agents, Alkylating/therapeutic use
+MH  - Chlorambucil/therapeutic use
+MH  - Disease Progression
+MH  - Drug Approval
+MH  - Europe
+MH  - Female
+MH  - Humans
+MH  - Leukemia, Lymphocytic, Chronic, B-Cell/*drug therapy
+MH  - Male
+MH  - Middle Aged
+MH  - United States
+MH  - United States Food and Drug Administration
+EDAT- 2008/02/29 09:00
+MHDA- 2008/05/16 09:00
+CRDT- 2008/02/29 09:00
+AID - 13/2/167 [pii]
+AID - 10.1634/theoncologist.2007-0218 [doi]
+PST - ppublish
+SO  - Oncologist. 2008 Feb;13(2):167-74. doi: 10.1634/theoncologist.2007-0218.
+ 
+PMID- 17227905
+OWN - NLM
+STAT- MEDLINE
+DA  - 20070117
+DCOM- 20070316
+LR  - 20161124
+IS  - 1083-7159 (Print)
+IS  - 1083-7159 (Linking)
+VI  - 12
+IP  - 1
+DP  - 2007 Jan
+TI  - Food and Drug Administration drug approval summary: Sunitinib malate for the
+      treatment of gastrointestinal stromal tumor and advanced renal cell carcinoma.
+PG  - 107-13
+AB  - On January 26, 2006, sunitinib (Sutent) received regular approval as monotherapy
+      for the treatment of patients with gastrointestinal stromal tumor after disease
+      progression on or intolerance to imatinib mesylate (Gleevec). Time-to-tumor
+      progression (TTP) of sunitinib-treated patients was superior to that of
+      placebo-treated patients. Median TTP of sunitinib-treated patients was 27.3
+      weeks, compared with 6.4 weeks for placebo-treated patients (p < .0001). Partial
+      responses were observed in 6.8% of sunitinib-treated patients and no
+      placebo-treated patients. Sunitinib also received accelerated approval on January
+      26, 2006, as monotherapy for treatment of advanced renal cell carcinoma (RCC). In
+      two single-arm trials of sunitinib in patients with metastatic RCC, partial
+      responses were observed in 25.5% (95% confidence interval [CI], 17.5, 34.9) and
+      36.5% (95% CI, 24.7, 49.6) of patients. Median response durations in the two
+      trials were 27.1 weeks (95% CI, 24.4, incalculable) and 54 weeks (95% CI, 34.3,
+      70.1). Treatment-emergent adverse events in sunitinib-treated patients included
+      diarrhea, mucositis, skin abnormalities, altered taste, electrolyte
+      abnormalities, hypertension, and diminution in left ventricular ejection
+      fraction. Cardiac safety of sunitinib in patients with preexisting cardiac
+      abnormalities remains unknown. Based on nonclinical findings, physicians
+      prescribing sunitinib should monitor for adrenal insufficiency in patients who
+      undergo stressors such as surgery, trauma, or severe infection. Caution should be
+      exercised when administering sunitinib in combination with known CYP3A4 inducers
+      or inhibitors.
+FAU - Rock, Edwin P
+AU  - Rock EP
+AD  - Food and Drug Administration, Division of Drug Oncology Products, 10903 New
+      Hampshire Avenue, Bldg. 22, Rm. 2133, Silver Spring, Maryland 20903, USA.
+      edwin.rock@fda.hhs.gov
+FAU - Goodman, Vicki
+AU  - Goodman V
+FAU - Jiang, Janet X
+AU  - Jiang JX
+FAU - Mahjoob, Kooros
+AU  - Mahjoob K
+FAU - Verbois, S Leigh
+AU  - Verbois SL
+FAU - Morse, David
+AU  - Morse D
+FAU - Dagher, Ramzi
+AU  - Dagher R
+FAU - Justice, Robert
+AU  - Justice R
+FAU - Pazdur, Richard
+AU  - Pazdur R
+LA  - eng
+PT  - Journal Article
+PL  - United States
+TA  - Oncologist
+JT  - The oncologist
+JID - 9607837
+RN  - 0 (Antineoplastic Agents)
+RN  - 0 (Indoles)
+RN  - 0 (Pyrroles)
+RN  - V99T50803M (sunitinib)
+SB  - IM
+MH  - Adult
+MH  - Aged
+MH  - Aged, 80 and over
+MH  - Antineoplastic Agents/administration & dosage/adverse effects/*therapeutic use
+MH  - Carcinoma, Renal Cell/*drug therapy/pathology
+MH  - Clinical Trials as Topic
+MH  - *Drug Approval
+MH  - Female
+MH  - Gastrointestinal Stromal Tumors/*drug therapy
+MH  - Humans
+MH  - Indoles/administration & dosage/adverse effects/*therapeutic use
+MH  - Kidney Neoplasms/*drug therapy/pathology
+MH  - Male
+MH  - Middle Aged
+MH  - Pyrroles/administration & dosage/adverse effects/*therapeutic use
+MH  - Safety
+MH  - United States
+MH  - *United States Food and Drug Administration
+EDAT- 2007/01/18 09:00
+MHDA- 2007/03/17 09:00
+CRDT- 2007/01/18 09:00
+AID - 12/1/107 [pii]
+AID - 10.1634/theoncologist.12-1-107 [doi]
+PST - ppublish
+SO  - Oncologist. 2007 Jan;12(1):107-13.
+ 
+PMID- 12796358
+OWN - NLM
+STAT- MEDLINE
+DA  - 20030610
+DCOM- 20040106
+LR  - 20151119
+IS  - 1078-0432 (Print)
+IS  - 1078-0432 (Linking)
+VI  - 9
+IP  - 6
+DP  - 2003 Jun
+TI  - Approval summary: imatinib mesylate capsules for treatment of adult patients with
+      newly diagnosed philadelphia chromosome-positive chronic myelogenous leukemia in
+      chronic phase.
+PG  - 1972-9
+AB  - PURPOSE: The purpose is to describe the Food and Drug Administration (FDA) review
+      and approval of imatinib (Gleevec; Novartis Pharmaceuticals, East Hanover, NJ)
+      for treatment of adult patients with newly diagnosed Philadelphia
+      chromosome-positive chronic myelogenous leukemia (CML) in chronic phase.
+      EXPERIMENTAL DESIGN: The FDA reviewed data in electronic format from a randomized
+      controlled clinical trial of 1106 adult patients with newly diagnosed
+      Philadelphia chromosome-positive CML in chronic phase, comparing imatinib with
+      the combination of IFN-alpha and cytarabine. RESULTS: Imatinib showed clinically
+      and statistically significantly better results for time-to-progression to
+      accelerated phase or blast crisis, progression-free survival, complete
+      hematological response rate, and cytogenetic response rate. With a median
+      follow-up of 14 months, a maximum follow-up of 19.5 months, and an expected
+      median survival of 5-6 years on the IFN-alpha/cytarabine control arm, few of the
+      expected progressions to accelerated or blast phase or deaths have occurred.
+      Imatinib was also better tolerated. Edema, nausea, rigors, neutropenia, and
+      headache were more frequent in women. Only 57% of the IFN-alpha target dose was
+      administered, and only 68% of patients received any cytarabine. However, this
+      does not appear to adequately explain the superiority of imatinib observed in
+      this trial. Results of a population pharmacokinetic study in a subgroup of 371
+      patients and a separate rifampin-imatinib drug-drug interaction study in healthy
+      volunteers are presented. CONCLUSIONS: On December 20, 2002, imatinib was granted
+      accelerated approval under subpart H, rather than regular approval. Follow-up is
+      short compared with the natural history of chronic phase CML or more mature
+      results with established therapies such as IFN-alpha or transplantation. If
+      imatinib should stop working after 1.5-2 years, the results could be importantly
+      different from the present analysis. As a Phase IV postmarketing commitment, the
+      applicant has agreed to provide follow-up reports on this imatinib study annually
+      for the next 6 years.
+FAU - Johnson, John R
+AU  - Johnson JR
+AD  - Division of Oncology Drug Products (HFD-150), Center for Drug Evaluation and
+      Research, United States Food and Drug Administration, Rockville, Maryland 20857,
+      USA. Johnsonj@cder.fda.gov
+FAU - Bross, Peter
+AU  - Bross P
+FAU - Cohen, Martin
+AU  - Cohen M
+FAU - Rothmann, Mark
+AU  - Rothmann M
+FAU - Chen, Gang
+AU  - Chen G
+FAU - Zajicek, Anne
+AU  - Zajicek A
+FAU - Gobburu, Joga
+AU  - Gobburu J
+FAU - Rahman, Atiqur
+AU  - Rahman A
+FAU - Staten, Ann
+AU  - Staten A
+FAU - Pazdur, Richard
+AU  - Pazdur R
+LA  - eng
+PT  - Clinical Trial
+PT  - Journal Article
+PT  - Randomized Controlled Trial
+PL  - United States
+TA  - Clin Cancer Res
+JT  - Clinical cancer research : an official journal of the American Association for
+      Cancer Research
+JID - 9502500
+RN  - 0 (Antineoplastic Agents)
+RN  - 0 (Benzamides)
+RN  - 0 (Capsules)
+RN  - 0 (Piperazines)
+RN  - 0 (Pyrimidines)
+RN  - 8A1O1M485B (Imatinib Mesylate)
+SB  - IM
+MH  - Adult
+MH  - Age Factors
+MH  - Aged
+MH  - Antineoplastic Agents/*therapeutic use
+MH  - Benzamides
+MH  - Capsules
+MH  - Female
+MH  - Humans
+MH  - Imatinib Mesylate
+MH  - Leukemia, Myelogenous, Chronic, BCR-ABL Positive/*drug therapy/genetics
+MH  - Male
+MH  - Middle Aged
+MH  - Piperazines/adverse effects/*therapeutic use
+MH  - Pyrimidines/adverse effects/*therapeutic use
+MH  - Sex Factors
+EDAT- 2003/06/11 05:00
+MHDA- 2004/01/07 05:00
+CRDT- 2003/06/11 05:00
+PST - ppublish
+SO  - Clin Cancer Res. 2003 Jun;9(6):1972-9.
+ 
+PMID- 12374669
+OWN - NLM
+STAT- MEDLINE
+DA  - 20021010
+DCOM- 20030306
+LR  - 20151119
+IS  - 1078-0432 (Print)
+IS  - 1078-0432 (Linking)
+VI  - 8
+IP  - 10
+DP  - 2002 Oct
+TI  - Approval summary: imatinib mesylate in the treatment of metastatic and/or
+      unresectable malignant gastrointestinal stromal tumors.
+PG  - 3034-8
+AB  - PURPOSE: Imatinib mesylate (Gleevec; Novartis, East Hanover, NJ)is a receptor
+      tyrosine kinase inhibitor approved previously in 2001 by the United States Food
+      and Drug Administration for the treatment of chronic myelogenous leukemia in
+      blast crisis, accelerated phase, or in chronic phase after failure of IFN-alpha
+      therapy. We review herein the clinical profile of this drug and the regulatory
+      review leading to the approval of a supplemental New Drug Application for the
+      treatment of metastatic and/or unresectable malignant gastrointestinal stromal
+      tumors (GISTs). EXPERIMENTAL DESIGN: We discuss the efficacy and side effects of
+      imatinib mesylate in a Phase II trial of 147 patients with metastatic and/or
+      unresectable malignant GISTs, the basis for marketing approval, and postmarketing
+      commitments by the drug's manufacturer. RESULTS: Imatinib was assessed in a
+      single, open-label trial involving one European center and three centers in the
+      United States. Seventy-three patients were randomly allocated to receive 400 mg
+      of imatinib daily, and 74 patients received 600 mg daily. At the study report
+      cutoff date, an objective response was confirmed in 56 patients; the overall
+      response rate for the combined study arms was 38% (95% confidence interval,
+      30-46%). These responses were all partial responses. There was no statistically
+      significant difference in response rates between the two dose groups. Adverse
+      events included edema, fluid retention, nausea, vomiting, diarrhea, myalgias,
+      skin rash, bone marrow suppression, bleeding, and elevations in aspartate
+      aminotransferase, alanine aminotransferase, or bilirubin. Bleeding into the
+      gastrointestinal tract or intratumoral sites occurred in 7 patients (5%) and was
+      not correlated with thrombocytopenia or tumor bulk. The pharmacokinetics of
+      imatinib in GIST patients were similar to those of chronic myelogenous leukemia
+      patients. CONCLUSIONS: On February 1, 2001, imatinib mesylate was approved by the
+      United States Food and Drug Administration for the treatment of malignant
+      metastatic and/or unresectable GISTs. The recommended dose is 400 or 600 mg
+      daily.
+FAU - Dagher, Ramzi
+AU  - Dagher R
+AD  - Division of Oncology Drug Products, United States Food and Drug Administration,
+      Rockville, Maryland 20857, USA. dagherr@cder.fda.gov
+FAU - Cohen, Martin
+AU  - Cohen M
+FAU - Williams, Gene
+AU  - Williams G
+FAU - Rothmann, Mark
+AU  - Rothmann M
+FAU - Gobburu, Jogarao
+AU  - Gobburu J
+FAU - Robbie, Gabriel
+AU  - Robbie G
+FAU - Rahman, Atiqur
+AU  - Rahman A
+FAU - Chen, Gang
+AU  - Chen G
+FAU - Staten, Ann
+AU  - Staten A
+FAU - Griebel, Donna
+AU  - Griebel D
+FAU - Pazdur, Richard
+AU  - Pazdur R
+LA  - eng
+PT  - Clinical Trial
+PT  - Clinical Trial, Phase II
+PT  - Journal Article
+PT  - Multicenter Study
+PL  - United States
+TA  - Clin Cancer Res
+JT  - Clinical cancer research : an official journal of the American Association for
+      Cancer Research
+JID - 9502500
+RN  - 0 (Antineoplastic Agents)
+RN  - 0 (Benzamides)
+RN  - 0 (Piperazines)
+RN  - 0 (Pyrimidines)
+RN  - 8A1O1M485B (Imatinib Mesylate)
+RN  - EC 2.7.10.1 (Proto-Oncogene Proteins c-kit)
+SB  - IM
+MH  - Adenocarcinoma/*drug therapy/secondary/surgery
+MH  - Adult
+MH  - Aged
+MH  - Antineoplastic Agents/adverse effects/*therapeutic use
+MH  - Benzamides
+MH  - Drug Approval
+MH  - Female
+MH  - Gastrointestinal Neoplasms/*drug therapy/pathology/surgery
+MH  - Humans
+MH  - Imatinib Mesylate
+MH  - Male
+MH  - Middle Aged
+MH  - Piperazines/adverse effects/*therapeutic use
+MH  - Proto-Oncogene Proteins c-kit/metabolism
+MH  - Pyrimidines/adverse effects/*therapeutic use
+MH  - Remission Induction
+MH  - Stromal Cells/metabolism/*pathology
+MH  - Tissue Distribution
+MH  - Treatment Outcome
+MH  - United States
+MH  - United States Food and Drug Administration
+EDAT- 2002/10/11 04:00
+MHDA- 2003/03/07 04:00
+CRDT- 2002/10/11 04:00
+PST - ppublish
+SO  - Clin Cancer Res. 2002 Oct;8(10):3034-8.
+ 

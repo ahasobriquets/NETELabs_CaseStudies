@@ -1,0 +1,1 @@
+(("ramucirumab"[Supplementary Concept] OR "ramucirumab"[All Fields]) AND (("ramucirumab"[Supplementary Concept] OR "ramucirumab"[All Fields]) AND ("1900/01/01"[PDAT] : "2014/06/30"[PDAT]))) AND "clinical trial"[Publication Type]
