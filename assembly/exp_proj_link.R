@@ -15,13 +15,23 @@ setwd("~/NETELabs_CaseStudies/assembly/interim_results")
 # save(interim_results,file="interim_results.RData")
 
 # Read in pub_out (pmid-SID) and pub_cites (PubSID to SID) 
+
+# Need to add clipper to restrict SourceYear from 1900-2015.
+
 pub_out <- read.csv("pub_out.csv",colClasses=rep("character",6))
 pub_cites <- read.csv("pub_cites.csv",colClasses=rep("character",9))
+pub_cites$SourceYear <- as.integer(pub_cites$SourceYear)
+
+library(dplyr)
+pub_cites <- pub_cites %>% filter(SourceYear >=1900 & SourceYear <=2015)
+
+
 # free up memory
 # rm(interim_results)
 # print str stats
 str(pub_out)
 str(pub_cites)
+
 
 # Read in exporter link and projects data
 exp_link <- read.csv("~//NETELabs_CaseStudies/assembly/final_results/exporter_links.csv",colClasses=(rep("character",2)))
@@ -67,7 +77,7 @@ ramu_m2 <- merge(ramu_m1,pub_cites[,1:2],by.x="SID",by.y="citingSID",all.x=TRUE)
 suni_m2 <- merge(suni_m1,pub_cites[,1:2],by.x="SID",by.y="citingSID",all.x=TRUE)
 
 # rearrange columns and change column names for better comprehension
-library(dplyr)
+
 alem_m2 <- alem_m2 %>% select(year, pmid=id,citingSID=SID,citedSID)
 imat_m2 <- imat_m2 %>% select(year, pmid=id,citingSID=SID,citedSID,year)
 nela_m2 <- nela_m2 %>% select(year, pmid=id,citingSID=SID,citedSID,year)
@@ -126,14 +136,86 @@ suni_proj <- merge(suni_pre_exp,exp_link,by.x="combined_pmid",by.y="pmid")
 proj_intersect <- unique(Reduce(intersect,list(alem_proj$project_number,imat_proj$project_number,nela_proj$project_number,ramu_proj$project_number,suni_proj$project_number)))
 proj_intersect <- data.frame(proj_number=proj_intersect,stringsAsFactors=FALSE)
 proj_intersect <- proj_intersect %>% mutate(IC=substring(proj_number,4,5),Mechanism=substring(proj_number,1,3))
+proj_intersect <- proj_intersect %>% mutate(PType=substring(Mechanism,1,1))
+
+proj_union <- unique(Reduce(union,list(alem_proj$project_number,imat_proj$project_number,nela_proj$project_number,ramu_proj$project_number,suni_proj$project_number)))
+proj_union <- data.frame(proj_number=proj_union,stringsAsFactors=FALSE)
+proj_union <- proj_union %>% mutate(IC=substring(proj_number,4,5),Mechanism=substring(proj_number,1,3))
+proj_union <- proj_union %>% mutate(PType=substring(Mechanism,1,1))
 
 # replace NCI subdivisions CM, CO, and SC with CA in IC field
 proj_intersect$IC <- gsub("CM","CA",proj_intersect$IC)
 proj_intersect$IC <- gsub("CO","CA",proj_intersect$IC)
 proj_intersect$IC <- gsub("SC","CA",proj_intersect$IC)
 
-project_tab <- proj_intersect %>% group_by(IC,Mechanism) %>% summarize(length(proj_number)) %>% arrange(IC,Mechanism)
-colnames(project_tab) <- c("IC","Mechanism","Project_Count")
+proj_union$IC <- gsub("CM","CA",proj_union$IC)
+proj_union$IC <- gsub("CO","CA",proj_union$IC)
+proj_union$IC <- gsub("SC","CA",proj_union$IC)
+
+
+proj_intersect_percent <- proj_intersect %>% group_by(PType) %>% summarize(Count=length(proj_number)) %>% 
+mutate(Percent_I=round(100*Count/112)) %>% arrange(desc(Percent_I))
+proj_union_percent <- proj_union %>% group_by(PType) %>% summarize(Count=length(proj_number)) %>% 
+mutate(Percent_U=round(100*Count/19104)) %>% arrange(desc(Percent_U))
+t <- merge(proj_intersect_percent,proj_union_percent,by.x="PType",by.y="PType")
+
+library(ggplot2)
+tiff(filename = "proj_percent.tiff",
+     width = 7, height = 7, units = "in", pointsize = 12,
+     compression = c("none", "rle", "lzw", "jpeg", "zip", "lzw+p", "zip+p"),
+     bg = "white", res = 300, type = "quartz")
+proj_plot_tiff <- qplot(Percent_I, Percent_U,data=t,color=PType,size=9,xlab="Intersection",ylab="Union") + geom_abline(intercept = 0, slope = 1) + theme_bw() + geom_text(aes(label=PType), size=5,nudge_x=2,nudge_y=0) + theme(legend.position="none") + xlim(0,80) + ylim (0,80)
+print(proj_plot_tiff)
+dev.off()
+
+png(filename = "proj_percent.png",
+     width = 7, height = 7, units = "in", pointsize = 12,
+     bg = "white", res = 300, type = "quartz")
+proj_plot_png <- qplot(Percent_I, Percent_U,data=t,color=PType,size=9,xlab="Intersection",ylab="Union") + geom_abline(intercept = 0, slope = 1) + theme_bw() + geom_text(aes(label=PType), size=5,nudge_x=2,nudge_y=0) + theme(legend.position="none") + xlim(0,80) + ylim (0,80)
+print(proj_plot_png)
+dev.off()
+
+system("cp proj_percent.png ../../Paper/plos-latex-template/")
+
+# Study Section Data
+
+w_alem_ss <- merge(alem_proj,exp_projects,by.x="project_number",by.y="core_project_num")
+alem_ss <- w_alem_ss %>% select(project_number,study_section, study_section_name) %>% 
+unique() %>% mutate(PType=substring(project_number,1,1)) %>% filter(PType=="R" | PType=="P")
+
+w_imat_ss <- merge(imat_proj,exp_projects,by.x="project_number",by.y="core_project_num")
+imat_ss <- w_imat_ss %>% select(project_number,study_section, study_section_name) %>% 
+unique() %>% mutate(PType=substring(project_number,1,1)) %>% filter(PType=="R" | PType=="P")
+
+w_nela_ss <- merge(nela_proj,exp_projects,by.x="project_number",by.y="core_project_num")
+nela_ss <- w_nela_ss %>% select(project_number,study_section, study_section_name) %>% 
+unique() %>% mutate(PType=substring(project_number,1,1)) %>% filter(PType=="R" | PType=="P")
+
+w_ramu_ss <- merge(ramu_proj,exp_projects,by.x="project_number",by.y="core_project_num")
+ramu_ss <- w_ramu_ss %>% select(project_number,study_section, study_section_name) %>% 
+unique() %>% mutate(PType=substring(project_number,1,1)) %>% filter(PType=="R" | PType=="P")
+
+w_suni_ss <- merge(suni_proj,exp_projects,by.x="project_number",by.y="core_project_num")
+suni_ss <- w_suni_ss %>% select(project_number,study_section, study_section_name) %>% 
+unique() %>% mutate(PType=substring(project_number,1,1)) %>% filter(PType=="R" | PType=="P")
+
+ss_intersect <- sort(Reduce(intersect,list(suni_ss$study_section,ramu_ss$study_section,
+nela_ss$study_section,imat_ss$study_section,alem_ss$study_section)))
+
+ss_union <- sort(Reduce(union,list(suni_ss$study_section,ramu_ss$study_section,
+nela_ss$study_section,imat_ss$study_section,alem_ss$study_section)))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
