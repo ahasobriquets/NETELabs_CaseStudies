@@ -16,7 +16,7 @@ setwd("~/NETELabs_CaseStudies/assembly/interim_results")
 
 # Read in pub_out (pmid-SID) and pub_cites (PubSID to SID) 
 
-# Need to add clipper to restrict SourceYear from 1900-2015.
+# Clip SourceYear to restrict from 1900-2015.
 
 pub_out <- read.csv("pub_out.csv",colClasses=rep("character",6))
 pub_cites <- read.csv("pub_cites.csv",colClasses=rep("character",9))

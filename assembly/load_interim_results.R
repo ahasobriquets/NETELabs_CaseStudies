@@ -96,13 +96,24 @@ nela_m3 <- merge(nela_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(nela_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
 nela_m3 <- nela_m3 %>% mutate(drug="nela") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
 
+
 ramu_m3 <- merge(ramu_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(ramu_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
 ramu_m3 <- ramu_m3 %>% mutate(drug="ramu") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
+ramu_glob <- ramu_m3 %>% mutate(drug="ramu") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year)
 
 suni_m3 <- merge(suni_m2,pub_out[,1:2],by.x="citedSID",by.y="SID",all.x=TRUE)
 colnames(suni_m3) <- c("cited_sid","year","citing_pmid","citing_sid","cited_pmid")
 suni_m3 <- suni_m3 %>% mutate(drug="suni") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year,drug)
+
+
+alem_glob <- alem_m3 %>% mutate(drug="alem") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year)
+imat_glob <- imat_m3 %>% mutate(drug="imat") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year)
+nela_glob <- nela_m3 %>% mutate(drug="nela") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year)
+ramu_glob <- ramu_m3 %>% mutate(drug="ramu") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year)
+suni_glob <- suni_m3 %>% mutate(drug="suni") %>% select(citing_pmid,citing_sid,cited_sid,cited_pmid,year)
+
+glob_pubref <- rbind(alem_glob,imat_glob,nela_glob,ramu_glob,suni_glob) %>% unique()
 
 write.csv(alem_m3,file="alem_pubref.csv")
 write.csv(imat_m3,file="imat_pubref.csv")
@@ -116,6 +127,7 @@ write.delim(imat_m3, file="imat_pubref.tsv", quote = FALSE, row.names = FALSE, s
 write.delim(nela_m3, file="nela_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
 write.delim(ramu_m3, file="ramu_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
 write.delim(suni_m3, file="suni_pubref.tsv", quote = FALSE, row.names = FALSE, sep = "\t")
+write.delim(glob_pubref,file="glob_pubref.tsv",quote = FALSE, row.names = FALSE, sep = "\t")
 
 
 
