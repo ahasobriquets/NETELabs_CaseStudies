@@ -1,6 +1,7 @@
 # five_pack Stage I Assembly
 setwd("~/Desktop")
 rm(list=ls())
+library(dplyr)
 alem <- read.csv("~/NETELabs_CaseStudies/assembly/alemtuzumab_assembly/alem_eric_stage1.csv",stringsAsFactors=FALSE)
 imat <- read.csv("~/NETELabs_CaseStudies/assembly/imatinib_assembly/imat_eric_stage1.csv",stringsAsFactors=FALSE)
 nela <- read.csv("~/NETELabs_CaseStudies/assembly/nelarabine_assembly/nela_eric_stage1.csv",stringsAsFactors=FALSE)
