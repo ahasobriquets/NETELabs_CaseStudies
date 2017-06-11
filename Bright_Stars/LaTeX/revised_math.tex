@@ -1,0 +1,143 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb}
+\geometry{a4paper} 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{}
+\author{}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+\section*{Network Calculations}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\vspace{.1in}
+
+\paragraph{\textbf{Propagated Indegree Rank (PIR)}} 
+In this study, we examine five therapeutics $d_1, d_2, \ldots, d_5$, and their networks $N_1, N_2, \ldots, N_5$.
+The nodes of network $N_i$ are the publications associated to the therapeutic $d_i$, and the directed edges of $N_i$ are
+obtained by the global network $\mathcal{G}$. Thus, we include a directed
+edge between publications $x$ and $y$ if  and only if $x$ cites $y$  in $\mathcal{G}$. Hence, 
+$N_i$ is a simple graph (no parallel edges and no self-loops).
+
+
+We define  network $\mathcal{N}$ to be the graph-theoretic union of the
+networks $N_1, N_2, \ldots, N_5$ (i.e., $\mathcal{N} =\cup_i N_i$). Thus, the nodes of the
+network $\mathcal{N}$ are the nodes that appear in at least one network $N_i$, and we include a directed
+edge between publications $x$ and $y$ if  and only if $x$ cites $y$ in at least one of the networks $N_i$; hence, 
+$\mathcal{N}$ is a simple graph (no parallel edges and no self-loops).
+
+Let $\mathfrak{n}$ denote some selected network $\mathcal{N}_i$, 
+let $c_{\mathfrak{n}}(\mathfrak{p})$ be the citation score of publication $\mathfrak{p}$ in  $\mathfrak{n}$, and let $\mathcal{C}_\mathfrak{p}^\mathfrak{n}$ be the set of publications in $\mathfrak{\mathfrak{n}}$ that cite $\mathfrak{p}$. 
+
+We define the aggregated citation count for  $\mathfrak{p}$ within network $\mathfrak{\mathfrak{n}}$, denoted by  $ac_{\mathfrak{n}}(\mathfrak{p})$, by
+$$ ac_{\mathfrak{n}}(\mathfrak{p}) = c_{\mathfrak{n}}(\mathfrak{p}) + \sum_{g\in \mathcal{C}_\mathfrak{p}^\mathfrak{n}}  c_{\mathfrak{n}}(g).$$
+
+Let $\mathcal{A}_a^{\mathfrak{n}}$ be the set of publications for an author $\mathfrak{a}$ in  $\mathfrak{\mathfrak{n}}$. Then the PIR score  for  $\mathfrak{a}$  in network $\mathfrak{n}$ is defined by $$ pir_{\mathfrak{n}}(\mathfrak{a}) =  \sum_{p\in \mathcal{A}_a^{\mathfrak{n}}}  ac_{\mathfrak{n}}(\mathfrak{p}) $$ 
+
+Hence, 
+%the PIR score for author  $\mathfrak{a}$ in  $\mathfrak{n}$ is  
+$$ pir_{\mathfrak{n}}(\mathfrak{a}) =  \sum_{p\in \mathcal{A}_a^{\mathfrak{n}} } \big[c_{\mathfrak{{\mathfrak{n}}}}(p) + \sum_{g\in \mathcal{C}_\mathfrak{p}^{\mathfrak{n}}}  c_{\mathfrak{{\mathfrak{n}}}}(g)\big] $$
+
+Next we define the nPIR score  of author $\mathfrak{a}$ within network $\mathcal{N}$ (denoted by $nPIR\mathfrak{a}$) to  be  $pir_{\mathcal{N}}(\mathfrak{a})$; in other words
+it is the $pir$ score based on the network $\mathcal{N}$.  
+
+%$npir(\mathfrak{a})$, which is $pir$ score based on the  total network $\mathcal{N}$.
+
+% For convenience, instead of denoting it $pir_N$, we use $npir$   Furthermore 
+
+We define the PIR partition ratio (PPR)  of author $\mathfrak{a}$ (denoted by $ppr(\mathfrak{a})$)
+to be 
+%:\mathcal{A}\rightarrow [0,\infty]$  of author $\mathfrak{a}$ as 
+$$ppr(\mathfrak{a})= \dfrac{ nPIR({\mathfrak{a}})} {\sum_{i=1}^{5} pir_{N_i}(\mathfrak{a})} $$
+%where $\mathcal{A}$ is the set of authors in $\mathcal{N}$  and  $pir_{N_i}(\mathfrak{a})$.
+% is the PIR score of the author $\mathfrak{a}$ in $\mathcal{N}_i$.
+%restricted to only drug network $\mathcal{D}_i$ .
+
+There are cases where PPR can be greater than 1.
+% and one way this can occur is when an author's influence extends beyond $\mathcal{N}_i$ but within $\mathcal{N}$.  
+
+\vspace{.1in}
+
+\paragraph{\textbf {Ratio of Basic Rankings (RBR)}}
+\begin{itemize}
+\item nRBR (i.e., network RBR) is the ratio of an author's publication count in a given network $\mathfrak{n}$ to the total publication count for that author  in $\mathcal{N}$.
+ Thus, nRBR depends on both the author $\mathfrak{a}$ and the given network $\mathfrak{n}$, and is denoted by $nRBR(\mathfrak{a},\mathfrak{n})$.
+%We define in-degree count $ic_{d_i}(\mathfrak{a})$ of an author $\mathfrak{a}$ as the total number of the publication which is in the network $\mathcal{N}_i$ of the drug $d_i$, similarly lets $ic_{n}$ be the number of the paper that author $\mathfrak{a}$ published in the total Network(5-drug's network) $\mathcal{N}$. Then we define, nRBR of an author $\mathfrak{a}$  for a drug $d_i$ as follow.
+%$$ nrbr_{d_i}(\mathfrak{a}) = \dfrac{ic_{d_i}(\mathfrak{a})}{ic_{N}(\mathfrak{a})}$$
+\item gRBR, or global RBR, is the ratio of an author's count of publications in network $\mathfrak{n}$ to the author's total publication count in the global network $\mathcal{G}$,
+and is denoted by gRBR$(\mathfrak{a},\mathfrak{n})$. 
+%Thus, the $grlobRBR(\mathfrak{a},n)$ score of an author  $\mathfrak{a}$  for the drug $d_i$ is defined as 
+%$$grbr_{d_i}(\mathfrak{a}) = \dfrac{ic_{d_i}(\mathfrak{a})}{ic_{G}(\mathfrak{a})}$$
+%where $ic_{G}$ is the total number of publication that an author $\mathfrak{a}$ currently has.
+\end{itemize}
+\noindent
+nRBR$(\mathfrak{a},n)$ and gRBR$(\mathfrak{a},n)$ are both ratios with the same numerator but with different denominators, and  
+$0 \leq$ nRBR$(\mathfrak{a},\mathfrak{n}) \leq$ gRBR$(\mathfrak{a},\mathfrak{n}) \leq 1$.
+
+\end{document}
+ Here in this study we focus on the $ppr$ values which is greated than 1. Greater the value, the higher the level of interactions(citation edges/flow) of the author's publication between other publications in the subnetworks. We have proved in Proposition 0.1 that a lower bound for ppr score of an author is 0.2. The cases where $ppr\leq1$  will be addressed in the next study due the coupling of intersection count and inter-citation issues.
+
+
+\begin{proposition}
+Let the set $\mathcal{K}$ be the union of $k\geq 2$ subnetworks, and N be the complete citation network of the set K. Then the lower bound for the $ppr$ score is 1/k. 
+\end{proposition}
+
+\begin{proof} Let $\mathcal{A}_\mathfrak{a}^N$ be the set publications $\{\mathfrak{p}_1,\mathfrak{p}_2,...,\mathfrak{p}_m\} $  written by an author $\mathfrak{a}$ in the whole network $\mathcal{N}$. For any $\mathfrak{p}_j \in \mathcal{A}_\mathfrak{a}^N$, lets define sequence of publication $S_r^n (\mathfrak{p}_j)$ be the sequence of publication(with duplicates) having exactly $r$ number of edges  apart in the directed graph of citation Network. Then, aggragated citation of a paper  $\mathfrak{p}_j$ in any network $\mathfrak{n}$ can also be written
+$$wc_n(\mathfrak{p}_j) = |S_1^n(\mathfrak{p}_j)| + |S_2^n(\mathfrak{p}_j)|$$ 
+where $|\cdot|$ defined as the length of the sequence. Since for any subnetwork $d_i$, $|S_r^{d_i}| \leq  |S_r^N| $
+for $r \geq1$, we have then,
+
+
+\begin{equation}
+\begin{split}
+\sum_{i=1}^k wc_{d_i}(\mathfrak{p}_j) &= \sum_{i=1}^k |S_1^{d_i}(\mathfrak{p}_j)| + |S_2^{d_i}(\mathfrak{p}_j)| \\
+ &\leq \sum_{i=1}^k |S_1^{N}(\mathfrak{p}_j)| + |S_2^{N}(\mathfrak{p}_j)| \\
+ &=k(|S_1^{N}(\mathfrak{p}_j)| + |S_2^{N}(\mathfrak{p}_j)|)\\
+ &=k(wc_N(\mathfrak{p}_j))
+\end{split}
+\end{equation}
+
+Next  using  inequality (1) and changing the order of sums due to finite index sum gives,
+
+\begin{equation}
+\begin{split}
+\sum_{i=1}^k pir_{d_i}(\mathfrak{a})&=\sum_{i=1}^k \sum_{j=1}^m wc_{d_i}(\mathfrak{p}_j)=\sum_{j=1}^m \sum_{i=1}^k wc_{d_i}(\mathfrak{p}_j) \\
+&\leq k\sum_{j=1}^m  wc_N(\mathfrak{p}_j) = k (npir(\mathfrak{a}))
+\end{split}
+\end{equation}
+
+which implies that \\
+
+\begin{equation}
+\begin{split}
+\dfrac{1}{k}\leq \dfrac{npir(\mathfrak{a})}{\sum_{i=1}^k pir_{d_i}(\mathfrak{a})}=ppr(\mathfrak{a})
+\end{split}
+\end{equation}
+
+
+
+\end{proof}
+
+
+
+\end{document}
