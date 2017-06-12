@@ -1,0 +1,311 @@
+% Template for PLoS
+% Version 3.3 June 2016
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+% Created to hold supplementary information
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Leave date blank
+\date{}
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{27.023pt}
+\lhead{\includegraphics[width=3.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{1.25in}
+\fancyfootoffset[L]{1.25in}
+\lfoot{\sf PLOS}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+%\Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+%\ddag These authors also contributed equally to this work.
+
+% Current address notes
+% change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address 
+% \textcurrency c Insert third current address
+
+% Deceased author note
+%\dag Deceased
+
+% Group/Consortium Author Note
+%\textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+\section*{Supporting Information for Keserci et al.}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{Notation and Calculations} 
+\textbf{}
+\begin {itemize}
+\item $d_i =$  therapeutic, e.g., alemtuzumab(alem) or imatinib(imat)
+\item $N_i =$ the network of a therapeutic $d_i$;
+\item $\mathcal{N}$ = union of all networks $N_i$
+\item $\mathcal{G}$ the global network - the set of all authors and their publications in the Scopus database
+\item $\mathcal{M}$ the set of all subnetworks - ie $\{N_1,N_2,N_3,N_4,N_5\}$
+\item $c_n(\mathfrak{p})$ citation of a publication $\mathfrak{p}$ in a network $n$
+\item $\mathcal{C}_\mathfrak{p}^n$ =the set of publications which cites $\mathfrak{p}$ in a network $n$
+\item $wc_n(\mathfrak{p})$  weighted citation of a publication $\mathfrak{p}$ in a network $n$
+\item $\mathcal{A}_\mathfrak{a}^n$ the set of publications for an author $\mathfrak{a}$ in a network $n$
+\item $pir_n(\mathfrak{a})$ the PIR  score of an author in a Network $n$ in $\mathcal{M}$
+\item $npir(\mathfrak{a})$ the PIR score of an author  $\mathfrak{a}$ in the Network  $\mathcal{N}$ 
+\item $ir(\mathfrak{a})$ partitioning of a research metric for an author $\mathfrak{a}$ 
+\item $ic_{d_i}(\mathfrak{a})$ = total \# in-degree count for an author $\mathfrak{a}$  for drug $d_i$. (ie. = $\|\mathcal{A}_\mathfrak{a}^{d_i}\|$)
+\item $ic_n(\mathfrak{a})$ = total \# in-degree count for an author $\mathfrak{a}$  in  $\mathcal{N}$ (i.e = $\|\mathcal{A}_\mathfrak{a}^{N}\|$)
+\item $ nrbr_{d_i}(\mathfrak{a}) $ modified RBR for an author in a drug network, $d_i$, that is normalized to the author's publications in all five networks $\mathcal{N}$ 
+\item $ grbr_{d_i}(\mathfrak{a}) $ modified RBR for any author in all five drug networks that is normalized to the global network $\mathcal{G}$ 
+\end{itemize}
+\vspace{2 mm}
+
+\paragraph{Propagated Indegree Rank (PIR)} We define the global network $\mathcal{N}$ as the union of the each individual sub-network of a therapeutic $d_i$. In other words 
+$$ \mathcal{N} = \cup_{i =1}^{5} \mathcal{N}_i $$
+Let $c_n(\mathfrak{p})$ be the citation score of the the paper $\mathfrak{p}$ in a network $n$, and $\mathcal{C}_\mathfrak{p}^n$ be the set of publication which cites $\mathfrak{p}$. Then we define the weighted citation of a paper $\mathfrak{p}$ as $$wc_n(\mathfrak{p}) = c_n(\mathfrak{p}) + \sum_{g\in \mathcal{C}_\mathfrak{p}^n}  c_n(g) $$
+Let $\mathcal{A}_a^n$ be the set of publications for an author $\mathfrak{a}$ in a Network $n$. Then the PIR score  for an author $\mathfrak{a}$  in network $n$ is defined as $$ pir_n(\mathfrak{a}) =  \sum_{p\in \mathcal{A}_a^n}  wc_n(\mathfrak{p}) $$
+
+More simply, the PIR score for an author  $\mathfrak{a}$ in a Network $n$ is  $$ pir_n(\mathfrak{a}) =  \sum_{p\in \mathcal{A}_a^n } \big[c_n(p) + \sum_{g\in \mathcal{C}_\mathfrak{p}^n}  c_n(g)\big] $$
+
+Next we define the nPIR score $npir(\mathfrak{a})$, which is $pir$ score based on the  total network $\mathcal{N}$. For convenience, instead of denoting it $pir_N$, we use $npir$   Furthermore  we define the isolation of  research  metric $ir(\mathfrak{a}):\mathcal{R}\rightarrow [1,\infty]$  of an author $\mathfrak{a}$ as 
+$$ir(\mathfrak{a})= \dfrac{ npir({\mathfrak{a}})} {\sum_{1}^{5} pir_{d_i}(\mathfrak{a})} $$
+where $\mathcal{R}$ is the set of all authors in $\mathcal{N}$  and  $pir_{d_i}(\mathfrak{a})$ is the PIR score of the author $\mathfrak{a}$ restricted to only drug network $\mathcal{D}_i$ . If $ir(\mathfrak{a})$ approaches 1, the author's $\mathfrak{a}$ contribution to each drug is partitioned. The greater the $ir$, the closer  the interaction of the author's papers between the networks. 
+
+\paragraph{Ratio of Basic Rankings (RBR)}
+\begin{itemize}
+\item nRBR or network RBR is the ratio of an authors' count of publications in a network to the total number of the author's publications in the global Network. 
+Lets define in-degree count $ic_{d_i}(\mathfrak{a})$ of an author $\mathfrak{a}$ as the total number of the publication which is in the network $\mathcal{N}_i$ of the drug $d_i$, similarly lets $ic_{n}$ be the number of the paper that author $\mathfrak{a}$ published in the total Network(5-drug's network) $\mathcal{N}$. Then we define, nRBR of an author $\mathfrak{a}$  for a drug $d_i$ as follow.
+$$ nrbr_{d_i}(\mathfrak{a}) = \dfrac{ic_{d_i}(\mathfrak{a})}{ic_{N}(\mathfrak{a})}$$
+\item gRBR or global RBR is the ratio of an author's count of publications in a network to the author's total publication count. $\mathcal{G}$. Thus, $grbr$ score of an author  $\mathfrak{a}$  for the drug $d_i$ is defined as 
+$$grbr_{d_i}(\mathfrak{a}) = \dfrac{ic_{d_i}(\mathfrak{a})}{ic_{G}(\mathfrak{a})}$$
+where $ic_{G}$ is the total number of publication that an author $\mathfrak{a}$ currently has.
+\end{itemize}
+\clearpage
+
+\begin{table}[!ht]
+\centering
+\vspace{2.5 mm}
+\scalebox{0.8}{
+\begin{tabular}{|l| l| l| l| l| l| l| l|}
+\hline
+alem(A) & imat(I) & nela(N) & ramu(R) & suni(S) & combination  & intersection\_count &no\_of\_drugs\\ 
+ \hline
+%\multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \thickhline
+X & X & X & X & X & AINRS &  \textbf{14} & 5 \\ 
+\hline
+X & X &  & X & X & AIRS & \textbf{107} & 4 \\ 
+\hline
+X & X & X & X &  & AINR &  28 & 4 \\ 
+\hline
+X & X & X &  & X & AINS &  25 & 4 \\ 
+\hline
+& X & X & X & X & INRS &  22 & 4 \\ 
+\hline
+X &  & X & X & X & ANRS &  16 & 4 \\ 
+\hline 
+& X &  & X & X & IRS & \textbf{1762} & 3 \\ 
+\hline
+X & X &  & X &  & AIR & 231 & 3 \\ 
+\hline
+X & X &  &  & X & AIS & 211 & 3 \\ 
+\hline
+X &  &  & X & X & ARS & 156 & 3 \\ 
+\hline
+X & X & X &  &  & AIN &  81 & 3 \\ 
+\hline
+X &  & X & X &  & ANR &  56 & 3 \\ 
+\hline 
+& X & X &  & X & INS &  49 & 3 \\ 
+\hline
+& X & X & X &  & INR &  44 & 3 \\ 
+\hline
+ &  & X & X & X & NRS &  40 & 3 \\ 
+\hline
+X &  & X &  & X & ANS &  32 & 3 \\ 
+\hline 
+&  &  & X & X & RS & \textbf{7442} & 2 \\ 
+\hline
+& X &  &  & X & IS & 5415 & 2 \\ 
+\hline
+& X &  & X &  & IR & 2507 & 2 \\ 
+\hline
+X & X &  &  &  & AI & 1240 & 2 \\ 
+\hline
+X &  &  & X &  & AR & 448 & 2 \\ 
+\hline
+X &  &  &  & X & AS & 359 & 2 \\ 
+\hline
+X &  & X &  &  & AN & 334 & 2 \\ 
+\hline 
+& X & X &  &  & IN & 232 & 2 \\ 
+\hline
+&  & X & X &  & NR & 115 & 2 \\ 
+\hline 
+ &  & X &  & X & NS & 111 & 2 \\ 
+\hline
+&  &  & X &  & R & \textbf{49006} & 1 \\ 
+\hline 
+&  &  &  & X & S & 34257 & 1 \\ 
+\hline 
+& X &  &  &  & I & 27706 & 1 \\ 
+\hline
+X &  &  &  &  & A & 8978 & 1 \\ 
+\hline
+&  & X &  &  & N & 2498 & 1 \\ 
+\hline
+\end{tabular}}
+\vspace{2.5 mm}
+\caption{
+{\bf Intersecting Publications Across Networks} Intersections were calculated for the set of publications associated with each network. Both citing and cited references were included in each set and  Scopus identifiers were used to to minimize information loss (Table 2). Intersection counts are shown for all possible combinations of the five therapeutics. The largest intersection count in each combination group is shown in boldface. Therapeutic names are abbreviated as follows: alem (Alemtuzumab), imat(Imatinib), nela (Nelarabine), ramu (Ramucirumab), suni (Sunitinib). }
+\label{table1}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+\vspace{2.5 mm}
+\begin{tabular}{|l| l| l|}
+\hline
+Name& nPIR & PPR \\
+\hline
+\hline
+Ferrara N.	 & 46693 & 1.12 \\ 
+Folkman J. & 23660 & 1.15 \\ 
+Ullrich A. & 23034 & 1.46 \\ 
+Jain R. & 15267 & 1.13 \\ 
+Heldin C.	& 15148 & 1.21 \\ 
+Druker B.	& 15088 & 1.16 \\ 
+Schlessinger J.	& 14996 & 1.48 \\ 
+Dvorak H.	 & 14230 & 1.13 \\ 
+ Alitalo K.	& 13812 & 1.24 \\ 
+ Slamon D. & 13587 & 1.46 \\ 
+ Baselga J. & 12908 & 1.36 \\ 
+ Kantarjian H. & 12029 & 1.17 \\ 
+ Hicklin D.	 & 11775 & 1.17 \\ 
+ Witte O. & 11449 & 1.08 \\ 
+ Hanahan D. & 11072 & 1.19 \\ 
+ Buchdunger E.	 & 11032 & 1.22 \\ 
+ Risau W.	& 10950 & 1.24 \\ 
+ Talpaz M.	 & 10713 & 1.13 \\ 
+ Mendelsohn J.	 & 10534 & 1.54 \\ 
+ Lydon N. & 9988 & 1.18 \\ 
+ Goldman J. & 9927 & 1.11 \\ 
+ Shibuya M. & 9639 & 1.21 \\ 
+ Kitamura Y. & 9486 & 1.24 \\ 
+ Waldmann H. & 9363 & 1.04 \\ 
+ Kerbel R.	 & 9266 & 1.16 \\ 
+   \hline
+\end{tabular}
+\vspace{2.5 mm}
+\caption{
+{\bf Elite Performers} Researchers with the highest nPIR scores in the network of 5 anti-cancer therapeutics are listed. Also shown for each researcher is their PIRpartitionRatio (PPR). The nPIR indicates influence across all five networks and the PPR provides an estimate of how this influence is partitioned across each of the five networks (Materials and Methods). This list and its ordering should be considered in the context of the data being analyzed and not interpreted as an absolute ordering of research excellence in the field.}
+\label{table2}
+\end{table}
+
+\end{document}
+
