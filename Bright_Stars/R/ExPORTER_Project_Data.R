@@ -1,7 +1,8 @@
+# Read in ExPorter Project Data from downloaded csvs into a data frame. 
+# Because the number of columns changed over the years, we select a subset.
+
 # load exporter projects files into a list
 rm(list = ls())
-# Read in ExPorter Project Data from downloaded csvs and pass the resultant  
-# data frame to darlin (NETE Labs Server)
 
 setwd("~/Desktop/ExPORTER/xCleaned")
 temp <- list.files(pattern = "*.csv")
