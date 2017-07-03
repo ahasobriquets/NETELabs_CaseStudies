@@ -18,13 +18,10 @@ generate a CSV file which is designed as follows:
         c) The Publication Date
 
 
-6/30 : I'm assuming in the future, its probably going to be a smarter idea to pass a list which contains
-the addresses of the xml files. Then, loop through that list, parse each xml file for the pertinent
-information and pump it into the CSV file. For now though, I am primarily concerned with simply converting the XML to CSV.
+7/3 : Code has been updated to handle being passed an XML file which contains a series of smaller XML files
+inside of it
 '''
-
-import lxml # Used to parse the XML data
-from lxml import etree
+from lxml import etree # Used to parse the XML data
 import sys # Used to parse the input argument(s)
 import csv # Used to output information to a csv file
 
@@ -38,45 +35,51 @@ else:
         print "XML file: %s taken." % (str(xml_arg))
     else:
         raise ValueError('You did not pass an XML file!')
-# Open the XML file
-xml_file = open(xml_arg, 'r')
-# Use lxml to parse the XML file
-xml = etree.parse(xml_file)
-xml_file.close()
-
-# Check that the XML file has been accepted by lxml
-#print etree.tostring(root)
+# Open and parse the XML file with lxml
+xml = etree.parse(xml_arg)
 
 # Safety check that this is a proper PubMed XML file for safety's sake. (Might have to be changed if my logic is wrong here)
-# We can also add additional checks for other things as needed.
-if len(xml.xpath('//PubmedArticle'))==0:
-    raise ValueError('Passed XML file not a Pub Med XML file!')
+if len(xml.xpath('//PubmedArticleSet'))==0:
+    raise ValueError('Passed XML file not a Pubmed Article Set XML file!')
 
-# Pull possibly important information. -- Edit here in the future for whatever columns we want to get information on
-pmid = xml.xpath('//PMID')[0].text
-year = xml.xpath('//PubDate/Year')[0].text
-title = xml.xpath('//Journal/Title')[0].text
-publication_type = xml.xpath('//PublicationTypeList/PublicationType')[0].text
-keyword_list = xml.xpath('//KeywordList/Keyword')
-keyword_list = [keyword.text for keyword in keyword_list]
-print keyword_list
-
-# Just printing the information to the console to make sure the user is aware of what is going in
-print "Pulled XML Data for PMID: %s. \n\tTitle: %s. \n\tPublished in: %s\n\tPublication Type: %s\
-" % (pmid, title,year,publication_type)
-print "\tKeywords are:"
-for keyword in keyword_list:
-    print"\t%s"%(keyword)
-
-# Open a CSV file for writing -- This will need
+#Open a CSV file to write to
 with open('pub_med_test.csv', 'wb') as csvfile:
     pubmed_writer = csv.writer(csvfile, delimiter = ',')
     # Header information, particularly number of 'Keyword_*' columns produced, will need to likely be adjusted in a future update to accomodate for whatever the largest keyword list is (if all the articles have varying length lists...)
-    header = ['PMID', 'Year', 'Title', 'Publication_Type'] + ["Keyword_%d"%(i+1) for i in range(0,len(keyword_list))]
-    data = [pmid,year,title,publication_type] + keyword_list
-    # Write the desired data to the CSV file
+    # Currently, capping off at 80, since thats the most keywords in the list for the test XML file...
+    header = ['PMID', 'Year', 'Article_Title', 'Journal_Title', 'Publication_Type'] + ["Keyword_%d"%(i+1) for i in range(0,80)]
     pubmed_writer.writerow(header)
-    pubmed_writer.writerow(data)
+
+    # We intend to make records for every article in the XML file
+    for article in xml.iter("PubmedArticle"):
+        # Create a subset of the XML for each article
+        sub_xml = etree.ElementTree(article)
+
+        # For each type of article publication, we will create a new row of information (e.g. Journal Article, Multicenter Study, etc.)
+        for publication_type_tag_index in range(0,len(sub_xml.xpath('//PublicationTypeList/PublicationType'))):
+            # Pull all the desired information
+            pmid = sub_xml.xpath('//MedlineCitation/PMID')[0].text
+            try:
+                year = sub_xml.xpath('//PubDate/Year')[0].text
+            except IndexError: #when no PubDate/Year is available
+                year = "NA"
+            journal_title = sub_xml.xpath('//Journal/Title')[0].text
+            article_title = sub_xml.xpath('//ArticleTitle')[0].text
+            publication_type = sub_xml.xpath('//PublicationTypeList/PublicationType')[publication_type_tag_index].text
+            # Create NA filler info for keywords lists tht dont reach the 80 keyword cap
+            keyword_list = ["" for i in range(0,80)]
+            keyword_pull = sub_xml.xpath('//KeywordList/Keyword')
+            for keyword_index in range(0,len(keyword_pull)):
+                keyword_list[keyword_index] = keyword_pull[keyword_index].text
+
+            # Just printing the information to the console to make sure the user is aware of what is going in
+            print "Pulled XML Data for PMID: %s. \n\tTitle: %s\n\tJournal: %s \n\tPublished in: %s\n\tPublication Type: %s\
+            " % (pmid, article_title, journal_title, year,publication_type)
+
+            # Write the desired information off to the CSV file
+            data = [pmid,year,article_title,journal_title, publication_type] + keyword_list
+            data = [item.encode('utf-8') for item in data] # Make sure data is unicode safe (utf-8). Encode every string in the data list before writing to CSV
+            pubmed_writer.writerow(data)
 
 # Let the user know that the new CSV file has been created
 print "New file pub_med_test.csv created."
