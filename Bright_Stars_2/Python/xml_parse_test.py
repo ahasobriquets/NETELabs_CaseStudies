@@ -67,7 +67,7 @@ with open('pub_med_test.csv', 'wb') as csvfile:
             article_title = sub_xml.xpath('//ArticleTitle')[0].text
             publication_type = sub_xml.xpath('//PublicationTypeList/PublicationType')[publication_type_tag_index].text
             # Create NA filler info for keywords lists tht dont reach the 80 keyword cap
-            keyword_list = ["" for i in range(0,80)]
+            keyword_list = ["NA" for i in range(0,80)]
             keyword_pull = sub_xml.xpath('//KeywordList/Keyword')
             for keyword_index in range(0,len(keyword_pull)):
                 keyword_list[keyword_index] = keyword_pull[keyword_index].text
