@@ -1,0 +1,164 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb}
+\geometry{a4paper} 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\usepackage{changepage}
+\usepackage{graphics}
+
+% or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{}
+\author{}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+\section*{Network Calculations}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\vspace{.1in}
+
+\paragraph{\textbf{Propagated Indegree Rank (PIR)}} 
+In this study, we examine five therapeutics $d_1, d_2, \ldots, d_5$, and their networks $N_1, N_2, \ldots, N_5$.
+The nodes of network $N_i$ are the publications associated to the therapeutic $d_i$, and the directed edges of $N_i$ are
+obtained by the global network $\mathcal{G}$. Thus, we include a directed
+edge between publications $x$ and $y$ if  and only if $x$ cites $y$  in $\mathcal{G}$. Hence, 
+$N_i$ is a simple graph (no parallel edges and no self-loops).
+
+
+We define  network $\mathcal{N}$ to be the graph-theoretic union of the
+networks $N_1, N_2, \ldots, N_5$ (i.e., $\mathcal{N} =\cup_i N_i$). Thus, the nodes of the
+network $\mathcal{N}$ are the nodes that appear in at least one network $N_i$, and we include a directed
+edge between publications $x$ and $y$ if  and only if $x$ cites $y$ in at least one of the networks $N_i$; hence, 
+$\mathcal{N}$ is a simple graph (no parallel edges and no self-loops).
+
+
+
+Let $\mathfrak{n}$ denote some selected network $\mathcal{N}_i$, 
+let $c_{\mathfrak{n}}(\mathfrak{p})$ be the citation score of publication $\mathfrak{p}$ in  $\mathfrak{n}$, and let $\mathcal{C}_\mathfrak{p}^\mathfrak{n}$ be the set of publications in $\mathfrak{\mathfrak{n}}$ that cite $\mathfrak{p}$. 
+
+We define the aggregated citation count for  $\mathfrak{p}$ within network $\mathfrak{\mathfrak{n}}$, denoted by  $ac_{\mathfrak{n}}(\mathfrak{p})$, by
+$$ ac_{\mathfrak{n}}(\mathfrak{p}) = c_{\mathfrak{n}}(\mathfrak{p}) + \sum_{g\in \mathcal{C}_\mathfrak{p}^\mathfrak{n}}  c_{\mathfrak{n}}(g).$$
+
+Let $\mathcal{A}_a^{\mathfrak{n}}$ be the set of publications for an author $\mathfrak{a}$ in  $\mathfrak{\mathfrak{n}}$. Then the PIR score  for  $\mathfrak{a}$  in network $\mathfrak{n}$ is defined by $$ pir_{\mathfrak{n}}(\mathfrak{a}) =  \sum_{p\in \mathcal{A}_a^{\mathfrak{n}}}  ac_{\mathfrak{n}}(\mathfrak{p}) $$ 
+
+Hence, 
+%the PIR score for author  $\mathfrak{a}$ in  $\mathfrak{n}$ is  
+$$ pir_{\mathfrak{n}}(\mathfrak{a}) =  \sum_{p\in \mathcal{A}_a^{\mathfrak{n}} } \big[c_{\mathfrak{{\mathfrak{n}}}}(p) + \sum_{g\in \mathcal{C}_\mathfrak{p}^{\mathfrak{n}}}  c_{\mathfrak{{\mathfrak{n}}}}(g)\big] $$
+
+Next we define the nPIR score  of author $\mathfrak{a}$ within network $\mathcal{N}$ (denoted by $nPIR\mathfrak{(a)}$) to  be  $pir_{\mathcal{N}}(\mathfrak{a})$; in other words
+it is the $pir$ score based on the network $\mathcal{N}$.  
+
+$$ppr(\mathfrak{a})= \dfrac{ nPIR({\mathfrak{a}})} {\sum_{i=1}^{5} pir_{N_i}(\mathfrak{a})} $$
+
+There are cases where PPR can be greater than 1.
+
+\vspace{0.05 in}
+\paragraph{\textbf {Ratio of Basic Rankings (RBR)}}
+\begin{itemize}
+\item nRBR (i.e., network RBR) is the ratio of an author's publication count in a given network $\mathfrak{n}$ to the total publication count for that author  in $\mathcal{N}$.
+ Thus, nRBR depends on both the author $\mathfrak{a}$ and the given network $\mathfrak{n}$, and is denoted by $nRBR(\mathfrak{a},\mathfrak{n})$.
+\item gRBR, or global RBR, is the ratio of an author's count of publications in network $\mathfrak{n}$ to the author's total publication count in the global network $\mathcal{G}$,
+and is denoted by gRBR$(\mathfrak{a},\mathfrak{n})$. 
+\end{itemize}
+\noindent
+nRBR$(\mathfrak{a},n)$ and gRBR$(\mathfrak{a},n)$ are both ratios with the same numerator but with different denominators, and  
+$0 \leq$ nRBR$(\mathfrak{a},\mathfrak{n}) \leq$ gRBR$(\mathfrak{a},\mathfrak{n}) \leq 1$.
+
+\clearpage
+
+\begin{table}[!ht]
+\begin{adjustwidth}{-0.5 in}{0 in} % Comment out/remove adjustwidth environment if table fits in text column.
+\centering
+\caption{{\bf Intersection of Five Networks: Second Generation Publications}}
+\scalebox{0.8}{\begin{tabular}{|l+l|l|l|l|l|l|l|}
+\hline
+\hline
+SourceYear & SourceName & Author(s) \\ 
+  \hline
+1958 & J. Am. Stat. Assoc. & Kaplan ER, Meier P. \\ 
+1963 & Science & Jerne, NK and Nordin, AA.  \\ 
+1972 & J R Stat Soc & Cox DR.  \\ 
+1976 & Anal. Biochem. & Bradford MM. \\ 
+1977 & Br J Cancer & R. Peto, M.C. Pike, and P. Armitage  \\ 
+1977 & Proc. Natl. Acad. Sci. & Sanger FS., Nicklen S, Coulson AR.  \\ 
+1983 & J Immunol Methods & Mosmann T.  \\ 
+1984 & Adv Enzyme Regul & Chou TC, Talalay P.  \\ 
+1989 & Molecular Cloning: A Laboratory Manual & Sambrook, J., Fritsch, E. and Maniatis, T.  \\ 
+1994 & Acta Crystallogr D & Collaborative Computational Project 4 \\ 
+1994 & Acta Crystallogr. A & Navaza J.  \\ 
+1997 & Cell & Levine AJ. \\ 
+1997 & Am. J. Pathol. & Perez-Atayde AR, Sallan SE, Tedrow U, Connors S, Allred E, Folkman J.  \\ 
+1998 & CA: A Cancer Journal for Clinicians & Landis SH, Murray T,  Bolden S, Wingo PA. \\ 
+\hline
+\end{tabular}}
+\vspace{2.5 mm}
+\begin{flushleft}
+Publications at the intersection of all five networks are listed above. All 14 publications are found in the second generation of references(cited\_sid, Fig 2 Right Panel). 
+\end{flushleft}
+\label{table3}
+\end{adjustwidth}
+\end{table}
+\clearpage
+
+\begin{table}[!ht]
+\centering
+\caption{
+{\bf Elite Performers}}
+\vspace{2.5 mm}
+\begin{tabular}{|l| l| l|}
+\hline
+Name& nPIR & PPR \\
+\hline
+\hline
+Ferrara N.	 & 46693 & 1.12 \\ 
+Folkman J. & 23660 & 1.15 \\ 
+Ullrich A. & 23034 & 1.46 \\ 
+Jain R. & 15267 & 1.13 \\ 
+Heldin C.	& 15148 & 1.21 \\ 
+Druker B.	& 15088 & 1.16 \\ 
+Schlessinger J.	& 14996 & 1.48 \\ 
+Dvorak H.	 & 14230 & 1.13 \\ 
+ Alitalo K.	& 13812 & 1.24 \\ 
+ Slamon D. & 13587 & 1.46 \\ 
+ Baselga J. & 12908 & 1.36 \\ 
+ Kantarjian H. & 12029 & 1.17 \\ 
+ Hicklin D.	 & 11775 & 1.17 \\ 
+ Witte O. & 11449 & 1.08 \\ 
+ Hanahan D. & 11072 & 1.19 \\ 
+ Buchdunger E.	 & 11032 & 1.22 \\ 
+ Risau W.	& 10950 & 1.24 \\ 
+ Talpaz M.	 & 10713 & 1.13 \\ 
+ Mendelsohn J.	 & 10534 & 1.54 \\ 
+ Lydon N. & 9988 & 1.18 \\ 
+ Goldman J. & 9927 & 1.11 \\ 
+ Shibuya M. & 9639 & 1.21 \\ 
+ Kitamura Y. & 9486 & 1.24 \\ 
+ Waldmann H. & 9363 & 1.04 \\ 
+ Kerbel R.	 & 9266 & 1.16 \\ 
+  \hline
+\end{tabular}
+\vspace{2.5 mm}
+\begin{flushleft} Researchers with the highest nPIR scores in the network of 5 anti-cancer therapeutics are listed. Also shown for each researcher is their PIRpartitionRatio (PPR). The nPIR indicates influence across all five networks and the PPR provides an estimate of how this influence is partitioned across each of the five networks (Materials and Methods). This list and its ordering should be considered in the context of the data being analyzed and not interpreted as an absolute ordering of research excellence in the field.
+\end{flushleft}
+\label{table2}
+\end{table}
+
+\end{document}
