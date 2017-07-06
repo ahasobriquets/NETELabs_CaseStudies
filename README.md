@@ -1,6 +1,12 @@
 # NETELabs_CaseStudies
 This repo contains source files and code for a five drug study being conducted in collaboration with Eric Livingston and Alex Pico. Each subfolder corresponds to a case drug and has a code book describing all processes related to acquisition, curation, and analysis.
 
+The study is described in 
+
+http://biorxiv.org/content/early/2017/06/14/149559
+
+and is under review. 
+
 1. five_pack: file contains 6 PMID records for five anti-neoplastic drugs. These PMIDS were selected from FDA summary approval publications in PubMed.
 
   * imatinib (two pmids) NDA 021588
