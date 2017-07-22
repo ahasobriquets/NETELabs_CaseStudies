@@ -1,6 +1,8 @@
 '''
 VJ Davey
 June 30 2017
+GC
+added comment on 7/22/2017
 
 Usage:
     xml_parse_test.py -f [xml_file]
