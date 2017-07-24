@@ -20,7 +20,7 @@ if (d1[1] == "") {
 	d1 <- d1[-1]
 }
 # test this code
-davey <- read.csv("~/Desktop/pub_med_test.csv", stringsAsFactors = FALSE)
+davey <- read.csv("pub.csv", stringsAsFactors = FALSE)
 davey_trim <- davey[, -c(1:5)]
 davey_concat <- vector(mode="character",length=ncol(davey_trim))
 for (i in 1:ncol(davey_trim)) {
@@ -48,5 +48,6 @@ for (i in 1:length(perfect_hits[, 1])) {
 }
 final <- sort(final)
 print(final)
+write.csv(final,file="post_imatinib_candidates.csv")
 
 
